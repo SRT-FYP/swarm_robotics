@@ -1,0 +1,4 @@
+motor_left_forward_flag=False
+motor_left_backward_flag=False
+motor_right_forward_flag=False
+motor_right_backward_flag=False

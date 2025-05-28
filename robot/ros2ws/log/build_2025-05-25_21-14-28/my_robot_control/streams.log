@@ -1,0 +1,86 @@
+[0.630s] Invoking command in '/home/fyp/Desktop/robot/ros2ws/build/my_robot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fyp/Desktop/robot/ros2ws/install/motor_controller:/home/fyp/Desktop/robot/ros2ws/install/imu_reader:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/fyp/Desktop/robot/ros2ws/src/my_robot_control -DCMAKE_INSTALL_PREFIX=/home/fyp/Desktop/robot/ros2ws/install/my_robot_control
+[1.166s] -- The C compiler identification is GNU 13.3.0
+[1.598s] -- The CXX compiler identification is GNU 13.3.0
+[1.644s] -- Detecting C compiler ABI info
+[1.894s] -- Detecting C compiler ABI info - done
+[1.909s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.911s] -- Detecting C compile features
+[1.913s] -- Detecting C compile features - done
+[1.929s] -- Detecting CXX compiler ABI info
+[2.122s] -- Detecting CXX compiler ABI info - done
+[2.135s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.136s] -- Detecting CXX compile features
+[2.137s] -- Detecting CXX compile features - done
+[2.149s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.440s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.665s] -- Found rclcpp: 28.1.9 (/opt/ros/jazzy/share/rclcpp/cmake)
+[2.766s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[2.797s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[2.840s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.883s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.051s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[3.059s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[3.291s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[3.320s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[3.356s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.509s] -- Found rplidar_ros: 2.1.0 (/opt/ros/jazzy/share/rplidar_ros/cmake)
+[3.754s] -- Found ros2_control: 4.29.0 (/opt/ros/jazzy/share/ros2_control/cmake)
+[3.758s] -- Found hardware_interface: 4.29.0 (/opt/ros/jazzy/share/hardware_interface/cmake)
+[4.386s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[4.582s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.582s] -- Configured cppcheck include dirs: /home/fyp/Desktop/robot/ros2ws/src/my_robot_control/include
+[4.583s] -- Configured cppcheck exclude dirs and/or files: 
+[4.584s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.585s] -- Configured 'flake8' exclude dirs and/or files: 
+[4.587s] -- Added test 'lint_cmake' to check CMake code style
+[4.589s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[4.591s] -- Added test 'uncrustify' to check C / C++ code style
+[4.592s] -- Configured uncrustify additional arguments: 
+[4.593s] -- Added test 'xmllint' to check XML markup files
+[4.597s] -- Configuring done (3.9s)
+[4.690s] -- Generating done (0.1s)
+[4.700s] -- Build files have been written to: /home/fyp/Desktop/robot/ros2ws/build/my_robot_control
+[4.723s] Invoked command in '/home/fyp/Desktop/robot/ros2ws/build/my_robot_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fyp/Desktop/robot/ros2ws/install/motor_controller:/home/fyp/Desktop/robot/ros2ws/install/imu_reader:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/fyp/Desktop/robot/ros2ws/src/my_robot_control -DCMAKE_INSTALL_PREFIX=/home/fyp/Desktop/robot/ros2ws/install/my_robot_control
+[4.725s] Invoking command in '/home/fyp/Desktop/robot/ros2ws/build/my_robot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fyp/Desktop/robot/ros2ws/install/motor_controller:/home/fyp/Desktop/robot/ros2ws/install/imu_reader:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/fyp/Desktop/robot/ros2ws/build/my_robot_control -- -j4 -l4
+[4.821s] [ 66%] [32mBuilding CXX object CMakeFiles/my_robot_control.dir/src/motor_driver.cpp.o[0m
+[4.821s] [ 66%] [32mBuilding CXX object CMakeFiles/my_robot_control.dir/src/diffbot_system.cpp.o[0m
+[12.779s] [100%] [32m[1mLinking CXX shared library libmy_robot_control.so[0m
+[13.522s] [100%] Built target my_robot_control
+[13.541s] Invoked command in '/home/fyp/Desktop/robot/ros2ws/build/my_robot_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fyp/Desktop/robot/ros2ws/install/motor_controller:/home/fyp/Desktop/robot/ros2ws/install/imu_reader:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/fyp/Desktop/robot/ros2ws/build/my_robot_control -- -j4 -l4
+[13.559s] Invoking command in '/home/fyp/Desktop/robot/ros2ws/build/my_robot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fyp/Desktop/robot/ros2ws/install/motor_controller:/home/fyp/Desktop/robot/ros2ws/install/imu_reader:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/fyp/Desktop/robot/ros2ws/build/my_robot_control
+[13.572s] -- Install configuration: ""
+[13.572s] -- Installing: /home/fyp/Desktop/robot/ros2ws/install/my_robot_control/share/my_robot_control//launch
+[13.572s] -- Installing: /home/fyp/Desktop/robot/ros2ws/install/my_robot_control/share/my_robot_control//launch/rplidar.launch.py
+[13.573s] -- Installing: /home/fyp/Desktop/robot/ros2ws/install/my_robot_control/share/my_robot_control//launch/wheel_control.launch.py
+[13.573s] -- Installing: /home/fyp/Desktop/robot/ros2ws/install/my_robot_control/share/my_robot_control//config
+[13.573s] -- Installing: /home/fyp/Desktop/robot/ros2ws/install/my_robot_control/share/my_robot_control//config/diffbot_controller.yaml
+[13.574s] -- Installing: /home/fyp/Desktop/robot/ros2ws/install/my_robot_control/share/my_robot_control//ros2_control
+[13.574s] -- Installing: /home/fyp/Desktop/robot/ros2ws/install/my_robot_control/share/my_robot_control//ros2_control/diffbot.ros2_control.xacro
+[13.574s] -- Installing: /home/fyp/Desktop/robot/ros2ws/install/my_robot_control/share/my_robot_control//urdf
+[13.574s] -- Installing: /home/fyp/Desktop/robot/ros2ws/install/my_robot_control/share/my_robot_control//urdf/diffbot.materials.xacro
+[13.575s] -- Installing: /home/fyp/Desktop/robot/ros2ws/install/my_robot_control/share/my_robot_control//urdf/diffbot_description.urdf.xacro
+[13.575s] -- Installing: /home/fyp/Desktop/robot/ros2ws/install/my_robot_control/share/my_robot_control//urdf/diffbot.urdf.xacro
+[13.576s] -- Installing: /home/fyp/Desktop/robot/ros2ws/install/my_robot_control/include/
+[13.576s] -- Installing: /home/fyp/Desktop/robot/ros2ws/install/my_robot_control/include//my_robot_control
+[13.576s] -- Installing: /home/fyp/Desktop/robot/ros2ws/install/my_robot_control/include//my_robot_control/diffbot_system.hpp
+[13.576s] -- Installing: /home/fyp/Desktop/robot/ros2ws/install/my_robot_control/include//my_robot_control/motor_driver.hpp
+[13.577s] -- Installing: /home/fyp/Desktop/robot/ros2ws/install/my_robot_control/lib/libmy_robot_control.so
+[13.579s] -- Set non-toolchain portion of runtime path of "/home/fyp/Desktop/robot/ros2ws/install/my_robot_control/lib/libmy_robot_control.so" to ""
+[13.579s] -- Installing: /home/fyp/Desktop/robot/ros2ws/install/my_robot_control/share/my_robot_control/ros2_control_hardware.xml
+[13.580s] -- Installing: /home/fyp/Desktop/robot/ros2ws/install/my_robot_control/share/ament_index/resource_index/package_run_dependencies/my_robot_control
+[13.580s] -- Installing: /home/fyp/Desktop/robot/ros2ws/install/my_robot_control/share/ament_index/resource_index/parent_prefix_path/my_robot_control
+[13.581s] -- Installing: /home/fyp/Desktop/robot/ros2ws/install/my_robot_control/share/my_robot_control/environment/ament_prefix_path.sh
+[13.581s] -- Installing: /home/fyp/Desktop/robot/ros2ws/install/my_robot_control/share/my_robot_control/environment/ament_prefix_path.dsv
+[13.581s] -- Installing: /home/fyp/Desktop/robot/ros2ws/install/my_robot_control/share/my_robot_control/environment/path.sh
+[13.581s] -- Installing: /home/fyp/Desktop/robot/ros2ws/install/my_robot_control/share/my_robot_control/environment/path.dsv
+[13.581s] -- Installing: /home/fyp/Desktop/robot/ros2ws/install/my_robot_control/share/my_robot_control/local_setup.bash
+[13.581s] -- Installing: /home/fyp/Desktop/robot/ros2ws/install/my_robot_control/share/my_robot_control/local_setup.sh
+[13.582s] -- Installing: /home/fyp/Desktop/robot/ros2ws/install/my_robot_control/share/my_robot_control/local_setup.zsh
+[13.582s] -- Installing: /home/fyp/Desktop/robot/ros2ws/install/my_robot_control/share/my_robot_control/local_setup.dsv
+[13.582s] -- Installing: /home/fyp/Desktop/robot/ros2ws/install/my_robot_control/share/my_robot_control/package.dsv
+[13.582s] -- Installing: /home/fyp/Desktop/robot/ros2ws/install/my_robot_control/share/ament_index/resource_index/packages/my_robot_control
+[13.582s] -- Installing: /home/fyp/Desktop/robot/ros2ws/install/my_robot_control/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/my_robot_control
+[13.583s] -- Installing: /home/fyp/Desktop/robot/ros2ws/install/my_robot_control/share/my_robot_control/cmake/my_robot_controlConfig.cmake
+[13.583s] -- Installing: /home/fyp/Desktop/robot/ros2ws/install/my_robot_control/share/my_robot_control/cmake/my_robot_controlConfig-version.cmake
+[13.583s] -- Installing: /home/fyp/Desktop/robot/ros2ws/install/my_robot_control/share/my_robot_control/package.xml
+[13.586s] Invoked command in '/home/fyp/Desktop/robot/ros2ws/build/my_robot_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fyp/Desktop/robot/ros2ws/install/motor_controller:/home/fyp/Desktop/robot/ros2ws/install/imu_reader:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/fyp/Desktop/robot/ros2ws/build/my_robot_control

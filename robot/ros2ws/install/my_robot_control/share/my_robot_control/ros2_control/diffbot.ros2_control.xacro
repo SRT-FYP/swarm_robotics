@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:macro name="diffbot_ros2_control" params="name prefix">
+    <ros2_control name="${name}" type="system">
+      <hardware>
+        <plugin>my_robot_control/DiffBotSystem</plugin>
+        <!-- GPIO Pins Configuration -->
+        <param name="left_motor_pwm">12</param>
+        <param name="left_motor_forward">22</param>
+        <param name="left_motor_backward">23</param>
+        <param name="right_motor_pwm">13</param>
+        <param name="right_motor_forward">24</param>
+        <param name="right_motor_backward">25</param>
+      </hardware>
+      <joint name="left_wheel_joint">
+        <command_interface name="velocity"/>
+      </joint>
+      <joint name="right_wheel_joint">
+        <command_interface name="velocity"/>
+      </joint>
+    </ros2_control>
+  </xacro:macro> 
+    
+</robot>

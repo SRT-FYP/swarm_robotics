@@ -1,0 +1,20 @@
+[1.156s] Invoking command in '/home/fyp/Desktop/robot/ros2ws/src/hardware_software': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/fyp/Desktop/robot/ros2ws/build/hardware_software/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fyp/Desktop/robot/ros2ws/install/hardware_software/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/hardware_software build --build-base /home/fyp/Desktop/robot/ros2ws/build/hardware_software/build install --record /home/fyp/Desktop/robot/ros2ws/build/hardware_software/install.log --single-version-externally-managed install_data
+[1.509s] running egg_info
+[1.533s] writing ../../build/hardware_software/hardware_software.egg-info/PKG-INFO
+[1.534s] writing dependency_links to ../../build/hardware_software/hardware_software.egg-info/dependency_links.txt
+[1.535s] writing requirements to ../../build/hardware_software/hardware_software.egg-info/requires.txt
+[1.536s] writing top-level names to ../../build/hardware_software/hardware_software.egg-info/top_level.txt
+[1.587s] reading manifest file '../../build/hardware_software/hardware_software.egg-info/SOURCES.txt'
+[1.588s] writing manifest file '../../build/hardware_software/hardware_software.egg-info/SOURCES.txt'
+[1.588s] running build
+[1.588s] running build_py
+[1.588s] running install
+[1.598s] running install_lib
+[1.623s] running install_data
+[1.623s] copying params/slam.yaml -> /home/fyp/Desktop/robot/ros2ws/install/hardware_software/share/hardware_software/params/
+[1.624s] running install_egg_info
+[1.650s] removing '/home/fyp/Desktop/robot/ros2ws/install/hardware_software/lib/python3.12/site-packages/hardware_software-0.0.0-py3.12.egg-info' (and everything under it)
+[1.650s] Copying ../../build/hardware_software/hardware_software.egg-info to /home/fyp/Desktop/robot/ros2ws/install/hardware_software/lib/python3.12/site-packages/hardware_software-0.0.0-py3.12.egg-info
+[1.652s] running install_scripts
+[1.822s] writing list of installed files to '/home/fyp/Desktop/robot/ros2ws/build/hardware_software/install.log'
+[1.898s] Invoked command in '/home/fyp/Desktop/robot/ros2ws/src/hardware_software' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/fyp/Desktop/robot/ros2ws/build/hardware_software/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fyp/Desktop/robot/ros2ws/install/hardware_software/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/hardware_software build --build-base /home/fyp/Desktop/robot/ros2ws/build/hardware_software/build install --record /home/fyp/Desktop/robot/ros2ws/build/hardware_software/install.log --single-version-externally-managed install_data

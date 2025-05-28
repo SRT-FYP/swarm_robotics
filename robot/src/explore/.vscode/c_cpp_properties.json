@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/ghina-debian/ros2workspaces/m-explore-ros2/install/explore_lite/include/**",
+        "/home/ghina-debian/tb3_jazzy/install/turtlebot3_gazebo/include/**",
+        "/home/ghina-debian/tb3_jazzy/install/turtlebot3_fake_node/include/**",
+        "/opt/ros/jazzy/include/**",
+        "/home/ghina-debian/ros2workspaces/m-explore-ros2/src/explore/include/**",
+        "/home/ghina-debian/ros2workspaces/m-explore-ros2/src/map_merge/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
