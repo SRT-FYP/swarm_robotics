@@ -1,0 +1,41 @@
+[2.720s] Invoking command in '/home/fyp/Desktop/swarm_repo/robot/ros2ws/src/motor_controller': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/fyp/Desktop/swarm_repo/robot/ros2ws/build/motor_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fyp/Desktop/swarm_repo/robot/ros2ws/install/motor_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/motor_controller build --build-base /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/motor_controller/build install --record /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/motor_controller/install.log --single-version-externally-managed install_data
+[3.169s] running egg_info
+[3.169s] creating ../../build/motor_controller/motor_controller.egg-info
+[3.197s] writing ../../build/motor_controller/motor_controller.egg-info/PKG-INFO
+[3.199s] writing dependency_links to ../../build/motor_controller/motor_controller.egg-info/dependency_links.txt
+[3.201s] writing entry points to ../../build/motor_controller/motor_controller.egg-info/entry_points.txt
+[3.202s] writing requirements to ../../build/motor_controller/motor_controller.egg-info/requires.txt
+[3.202s] writing top-level names to ../../build/motor_controller/motor_controller.egg-info/top_level.txt
+[3.202s] writing manifest file '../../build/motor_controller/motor_controller.egg-info/SOURCES.txt'
+[3.258s] reading manifest file '../../build/motor_controller/motor_controller.egg-info/SOURCES.txt'
+[3.260s] writing manifest file '../../build/motor_controller/motor_controller.egg-info/SOURCES.txt'
+[3.261s] running build
+[3.261s] running build_py
+[3.262s] creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/motor_controller/build
+[3.262s] creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/motor_controller/build/lib
+[3.262s] creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/motor_controller/build/lib/motor_controller
+[3.262s] copying motor_controller/motor_driver.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/motor_controller/build/lib/motor_controller
+[3.263s] copying motor_controller/__init__.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/motor_controller/build/lib/motor_controller
+[3.264s] copying motor_controller/wheel_encoder.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/motor_controller/build/lib/motor_controller
+[3.264s] running install
+[3.275s] running install_lib
+[3.306s] creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/motor_controller/lib/python3.12/site-packages/motor_controller
+[3.307s] copying /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/motor_controller/build/lib/motor_controller/motor_driver.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/motor_controller/lib/python3.12/site-packages/motor_controller
+[3.307s] copying /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/motor_controller/build/lib/motor_controller/__init__.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/motor_controller/lib/python3.12/site-packages/motor_controller
+[3.307s] copying /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/motor_controller/build/lib/motor_controller/wheel_encoder.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/motor_controller/lib/python3.12/site-packages/motor_controller
+[3.307s] byte-compiling /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/motor_controller/lib/python3.12/site-packages/motor_controller/motor_driver.py to motor_driver.cpython-312.pyc
+[3.308s] byte-compiling /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/motor_controller/lib/python3.12/site-packages/motor_controller/__init__.py to __init__.cpython-312.pyc
+[3.308s] byte-compiling /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/motor_controller/lib/python3.12/site-packages/motor_controller/wheel_encoder.py to wheel_encoder.cpython-312.pyc
+[3.311s] running install_data
+[3.311s] creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/motor_controller/share/ament_index
+[3.311s] creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/motor_controller/share/ament_index/resource_index
+[3.311s] creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/motor_controller/share/ament_index/resource_index/packages
+[3.311s] copying resource/motor_controller -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/motor_controller/share/ament_index/resource_index/packages
+[3.312s] copying package.xml -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/motor_controller/share/motor_controller
+[3.312s] running install_egg_info
+[3.350s] Copying ../../build/motor_controller/motor_controller.egg-info to /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/motor_controller/lib/python3.12/site-packages/motor_controller-0.0.0-py3.12.egg-info
+[3.352s] running install_scripts
+[3.562s] Installing motor_driver script to /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/motor_controller/lib/motor_controller
+[3.562s] Installing wheel_encoder script to /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/motor_controller/lib/motor_controller
+[3.562s] writing list of installed files to '/home/fyp/Desktop/swarm_repo/robot/ros2ws/build/motor_controller/install.log'
+[3.704s] Invoked command in '/home/fyp/Desktop/swarm_repo/robot/ros2ws/src/motor_controller' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/fyp/Desktop/swarm_repo/robot/ros2ws/build/motor_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fyp/Desktop/swarm_repo/robot/ros2ws/install/motor_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/motor_controller build --build-base /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/motor_controller/build install --record /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/motor_controller/install.log --single-version-externally-managed install_data

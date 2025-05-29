@@ -1,0 +1,771 @@
+[0.000000] (-) TimerEvent: {}
+[0.000366] (explore_lite) JobQueued: {'identifier': 'explore_lite', 'dependencies': OrderedDict()}
+[0.000413] (hardware_software) JobQueued: {'identifier': 'hardware_software', 'dependencies': OrderedDict()}
+[0.000437] (imu_reader) JobQueued: {'identifier': 'imu_reader', 'dependencies': OrderedDict()}
+[0.000457] (motor_controller) JobQueued: {'identifier': 'motor_controller', 'dependencies': OrderedDict()}
+[0.000475] (my_robot_control) JobQueued: {'identifier': 'my_robot_control', 'dependencies': OrderedDict()}
+[0.000787] (explore_lite) JobStarted: {'identifier': 'explore_lite'}
+[0.007691] (hardware_software) JobStarted: {'identifier': 'hardware_software'}
+[0.014699] (imu_reader) JobStarted: {'identifier': 'imu_reader'}
+[0.021795] (motor_controller) JobStarted: {'identifier': 'motor_controller'}
+[0.030678] (explore_lite) JobProgress: {'identifier': 'explore_lite', 'progress': 'cmake'}
+[0.031300] (explore_lite) Command: {'cmd': ['/usr/bin/cmake', '/home/fyp/Desktop/swarm_repo/robot/ros2ws/src/explore', '-DCMAKE_INSTALL_PREFIX=/home/fyp/Desktop/swarm_repo/robot/ros2ws/install/explore_lite'], 'cwd': '/home/fyp/Desktop/swarm_repo/robot/ros2ws/build/explore_lite', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'fyp', 'SSH_CLIENT': '192.168.1.59 41366 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/fyp', 'OLDPWD': '/home/fyp', 'SSH_TTY': '/dev/pts/4', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'fyp', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'PATH': '/home/fyp/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/fyp/.local/bin:/home/fyp/.local/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/fyp/Desktop/swarm_repo/robot/ros2ws/build/explore_lite', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.59 41366 192.168.1.136 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/home/fyp/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099707] (-) TimerEvent: {}
+[0.200124] (-) TimerEvent: {}
+[0.300483] (-) TimerEvent: {}
+[0.400938] (-) TimerEvent: {}
+[0.501372] (-) TimerEvent: {}
+[0.601743] (-) TimerEvent: {}
+[0.683001] (explore_lite) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.701827] (-) TimerEvent: {}
+[0.802144] (-) TimerEvent: {}
+[0.902473] (-) TimerEvent: {}
+[1.003180] (-) TimerEvent: {}
+[1.103737] (-) TimerEvent: {}
+[1.204711] (-) TimerEvent: {}
+[1.244583] (explore_lite) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[1.294260] (explore_lite) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.304794] (-) TimerEvent: {}
+[1.405180] (-) TimerEvent: {}
+[1.505598] (-) TimerEvent: {}
+[1.523388] (explore_lite) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.537860] (explore_lite) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.539067] (explore_lite) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.540668] (explore_lite) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.559360] (explore_lite) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.605702] (-) TimerEvent: {}
+[1.706049] (-) TimerEvent: {}
+[1.778691] (explore_lite) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.797987] (explore_lite) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.798898] (explore_lite) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.799572] (explore_lite) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.801178] (explore_lite) StdoutLine: {'line': b'-- BuilD for ROS2: jazzy\n'}
+[1.806272] (-) TimerEvent: {}
+[1.828518] (explore_lite) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[1.906419] (-) TimerEvent: {}
+[2.007049] (-) TimerEvent: {}
+[2.081522] (explore_lite) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[2.107593] (-) TimerEvent: {}
+[2.210577] (-) TimerEvent: {}
+[2.310960] (-) TimerEvent: {}
+[2.398927] (explore_lite) StdoutLine: {'line': b'-- Found rclcpp: 28.1.9 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[2.411726] (-) TimerEvent: {}
+[2.512107] (-) TimerEvent: {}
+[2.585347] (explore_lite) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[2.613702] (-) TimerEvent: {}
+[2.648769] (explore_lite) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[2.715652] (-) TimerEvent: {}
+[2.730875] (explore_lite) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.741807] (motor_controller) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/motor_controller', 'build', '--build-base', '/home/fyp/Desktop/swarm_repo/robot/ros2ws/build/motor_controller/build', 'install', '--record', '/home/fyp/Desktop/swarm_repo/robot/ros2ws/build/motor_controller/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/fyp/Desktop/swarm_repo/robot/ros2ws/src/motor_controller', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'fyp', 'SSH_CLIENT': '192.168.1.59 41366 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/fyp', 'OLDPWD': '/home/fyp', 'SSH_TTY': '/dev/pts/4', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'fyp', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'PATH': '/home/fyp/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/fyp/.local/bin:/home/fyp/.local/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/fyp/Desktop/swarm_repo/robot/ros2ws/build/motor_controller', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.59 41366 192.168.1.136 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/home/fyp/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/fyp/Desktop/swarm_repo/robot/ros2ws/build/motor_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fyp/Desktop/swarm_repo/robot/ros2ws/install/motor_controller/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[2.746940] (imu_reader) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/imu_reader', 'build', '--build-base', '/home/fyp/Desktop/swarm_repo/robot/ros2ws/build/imu_reader/build', 'install', '--record', '/home/fyp/Desktop/swarm_repo/robot/ros2ws/build/imu_reader/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/fyp/Desktop/swarm_repo/robot/ros2ws/src/imu_reader', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'fyp', 'SSH_CLIENT': '192.168.1.59 41366 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/fyp', 'OLDPWD': '/home/fyp', 'SSH_TTY': '/dev/pts/4', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'fyp', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'PATH': '/home/fyp/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/fyp/.local/bin:/home/fyp/.local/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/fyp/Desktop/swarm_repo/robot/ros2ws/build/imu_reader', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.59 41366 192.168.1.136 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/home/fyp/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/fyp/Desktop/swarm_repo/robot/ros2ws/build/imu_reader/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fyp/Desktop/swarm_repo/robot/ros2ws/install/imu_reader/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[2.755190] (hardware_software) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/hardware_software', 'build', '--build-base', '/home/fyp/Desktop/swarm_repo/robot/ros2ws/build/hardware_software/build', 'install', '--record', '/home/fyp/Desktop/swarm_repo/robot/ros2ws/build/hardware_software/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/fyp/Desktop/swarm_repo/robot/ros2ws/src/hardware_software', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'fyp', 'SSH_CLIENT': '192.168.1.59 41366 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/fyp', 'OLDPWD': '/home/fyp', 'SSH_TTY': '/dev/pts/4', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'fyp', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'PATH': '/home/fyp/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/fyp/.local/bin:/home/fyp/.local/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/fyp/Desktop/swarm_repo/robot/ros2ws/build/hardware_software', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.59 41366 192.168.1.136 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/home/fyp/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/fyp/Desktop/swarm_repo/robot/ros2ws/build/hardware_software/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[2.792405] (explore_lite) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.817287] (-) TimerEvent: {}
+[2.917940] (-) TimerEvent: {}
+[3.018340] (-) TimerEvent: {}
+[3.025285] (explore_lite) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[3.036470] (explore_lite) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.118446] (-) TimerEvent: {}
+[3.186669] (imu_reader) StdoutLine: {'line': b'running egg_info\n'}
+[3.186967] (imu_reader) StdoutLine: {'line': b'creating ../../build/imu_reader/imu_reader.egg-info\n'}
+[3.191014] (hardware_software) StdoutLine: {'line': b'running egg_info\n'}
+[3.191405] (motor_controller) StdoutLine: {'line': b'running egg_info\n'}
+[3.191708] (motor_controller) StdoutLine: {'line': b'creating ../../build/motor_controller/motor_controller.egg-info\n'}
+[3.192792] (hardware_software) StdoutLine: {'line': b'creating ../../build/hardware_software/hardware_software.egg-info\n'}
+[3.216561] (imu_reader) StdoutLine: {'line': b'writing ../../build/imu_reader/imu_reader.egg-info/PKG-INFO\n'}
+[3.217977] (imu_reader) StdoutLine: {'line': b'writing dependency_links to ../../build/imu_reader/imu_reader.egg-info/dependency_links.txt\n'}
+[3.218540] (imu_reader) StdoutLine: {'line': b'writing entry points to ../../build/imu_reader/imu_reader.egg-info/entry_points.txt\n'}
+[3.218709] (-) TimerEvent: {}
+[3.219694] (motor_controller) StdoutLine: {'line': b'writing ../../build/motor_controller/motor_controller.egg-info/PKG-INFO\n'}
+[3.219926] (imu_reader) StdoutLine: {'line': b'writing requirements to ../../build/imu_reader/imu_reader.egg-info/requires.txt\n'}
+[3.220760] (motor_controller) StdoutLine: {'line': b'writing dependency_links to ../../build/motor_controller/motor_controller.egg-info/dependency_links.txt\n'}
+[3.221327] (motor_controller) StdoutLine: {'line': b'writing entry points to ../../build/motor_controller/motor_controller.egg-info/entry_points.txt\n'}
+[3.223879] (motor_controller) StdoutLine: {'line': b'writing requirements to ../../build/motor_controller/motor_controller.egg-info/requires.txt\n'}
+[3.224006] (motor_controller) StdoutLine: {'line': b'writing top-level names to ../../build/motor_controller/motor_controller.egg-info/top_level.txt\n'}
+[3.224107] (motor_controller) StdoutLine: {'line': b"writing manifest file '../../build/motor_controller/motor_controller.egg-info/SOURCES.txt'\n"}
+[3.224199] (imu_reader) StdoutLine: {'line': b'writing top-level names to ../../build/imu_reader/imu_reader.egg-info/top_level.txt\n'}
+[3.224303] (imu_reader) StdoutLine: {'line': b"writing manifest file '../../build/imu_reader/imu_reader.egg-info/SOURCES.txt'\n"}
+[3.225658] (hardware_software) StdoutLine: {'line': b'writing ../../build/hardware_software/hardware_software.egg-info/PKG-INFO\n'}
+[3.226669] (hardware_software) StdoutLine: {'line': b'writing dependency_links to ../../build/hardware_software/hardware_software.egg-info/dependency_links.txt\n'}
+[3.227551] (hardware_software) StdoutLine: {'line': b'writing entry points to ../../build/hardware_software/hardware_software.egg-info/entry_points.txt\n'}
+[3.228425] (hardware_software) StdoutLine: {'line': b'writing requirements to ../../build/hardware_software/hardware_software.egg-info/requires.txt\n'}
+[3.228665] (hardware_software) StdoutLine: {'line': b'writing top-level names to ../../build/hardware_software/hardware_software.egg-info/top_level.txt\n'}
+[3.229510] (hardware_software) StdoutLine: {'line': b"writing manifest file '../../build/hardware_software/hardware_software.egg-info/SOURCES.txt'\n"}
+[3.278565] (explore_lite) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[3.280696] (motor_controller) StdoutLine: {'line': b"reading manifest file '../../build/motor_controller/motor_controller.egg-info/SOURCES.txt'\n"}
+[3.282178] (motor_controller) StdoutLine: {'line': b"writing manifest file '../../build/motor_controller/motor_controller.egg-info/SOURCES.txt'\n"}
+[3.282678] (motor_controller) StdoutLine: {'line': b'running build\n'}
+[3.283827] (motor_controller) StdoutLine: {'line': b'running build_py\n'}
+[3.283917] (motor_controller) StdoutLine: {'line': b'creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/motor_controller/build\n'}
+[3.283999] (motor_controller) StdoutLine: {'line': b'creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/motor_controller/build/lib\n'}
+[3.284095] (motor_controller) StdoutLine: {'line': b'creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/motor_controller/build/lib/motor_controller\n'}
+[3.284187] (motor_controller) StdoutLine: {'line': b'copying motor_controller/motor_driver.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/motor_controller/build/lib/motor_controller\n'}
+[3.285123] (motor_controller) StdoutLine: {'line': b'copying motor_controller/__init__.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/motor_controller/build/lib/motor_controller\n'}
+[3.286302] (motor_controller) StdoutLine: {'line': b'copying motor_controller/wheel_encoder.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/motor_controller/build/lib/motor_controller\n'}
+[3.286530] (motor_controller) StdoutLine: {'line': b'running install\n'}
+[3.287527] (imu_reader) StdoutLine: {'line': b"reading manifest file '../../build/imu_reader/imu_reader.egg-info/SOURCES.txt'\n"}
+[3.287849] (imu_reader) StdoutLine: {'line': b"writing manifest file '../../build/imu_reader/imu_reader.egg-info/SOURCES.txt'\n"}
+[3.288177] (imu_reader) StdoutLine: {'line': b'running build\n'}
+[3.288393] (imu_reader) StdoutLine: {'line': b'running build_py\n'}
+[3.288643] (imu_reader) StdoutLine: {'line': b'creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/imu_reader/build\n'}
+[3.289135] (imu_reader) StdoutLine: {'line': b'creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/imu_reader/build/lib\n'}
+[3.289847] (imu_reader) StdoutLine: {'line': b'creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/imu_reader/build/lib/imu_reader\n'}
+[3.290077] (imu_reader) StdoutLine: {'line': b'copying imu_reader/imu_reader_node.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/imu_reader/build/lib/imu_reader\n'}
+[3.295527] (hardware_software) StdoutLine: {'line': b"reading manifest file '../../build/hardware_software/hardware_software.egg-info/SOURCES.txt'\n"}
+[3.295880] (hardware_software) StdoutLine: {'line': b"writing manifest file '../../build/hardware_software/hardware_software.egg-info/SOURCES.txt'\n"}
+[3.296023] (hardware_software) StdoutLine: {'line': b'running build\n'}
+[3.296640] (hardware_software) StdoutLine: {'line': b'running build_py\n'}
+[3.296828] (hardware_software) StdoutLine: {'line': b'creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/hardware_software/build\n'}
+[3.296940] (hardware_software) StdoutLine: {'line': b'creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/hardware_software/build/lib\n'}
+[3.297037] (hardware_software) StdoutLine: {'line': b'creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/hardware_software/build/lib/hardware_software\n'}
+[3.297123] (hardware_software) StdoutLine: {'line': b'copying hardware_software/__init__.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/hardware_software/build/lib/hardware_software\n'}
+[3.297214] (hardware_software) StdoutLine: {'line': b'copying hardware_software/mqtt_encoder.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/hardware_software/build/lib/hardware_software\n'}
+[3.297331] (imu_reader) StdoutLine: {'line': b'copying imu_reader/__init__.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/imu_reader/build/lib/imu_reader\n'}
+[3.297476] (imu_reader) StdoutLine: {'line': b'running install\n'}
+[3.297696] (motor_controller) StdoutLine: {'line': b'running install_lib\n'}
+[3.301651] (hardware_software) StdoutLine: {'line': b'running install\n'}
+[3.306115] (imu_reader) StdoutLine: {'line': b'running install_lib\n'}
+[3.310168] (hardware_software) StdoutLine: {'line': b'running install_lib\n'}
+[3.318833] (-) TimerEvent: {}
+[3.320517] (explore_lite) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[3.328669] (motor_controller) StdoutLine: {'line': b'creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/motor_controller/lib/python3.12/site-packages/motor_controller\n'}
+[3.328944] (motor_controller) StdoutLine: {'line': b'copying /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/motor_controller/build/lib/motor_controller/motor_driver.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/motor_controller/lib/python3.12/site-packages/motor_controller\n'}
+[3.329063] (motor_controller) StdoutLine: {'line': b'copying /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/motor_controller/build/lib/motor_controller/__init__.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/motor_controller/lib/python3.12/site-packages/motor_controller\n'}
+[3.329166] (motor_controller) StdoutLine: {'line': b'copying /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/motor_controller/build/lib/motor_controller/wheel_encoder.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/motor_controller/lib/python3.12/site-packages/motor_controller\n'}
+[3.329259] (motor_controller) StdoutLine: {'line': b'byte-compiling /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/motor_controller/lib/python3.12/site-packages/motor_controller/motor_driver.py to motor_driver.cpython-312.pyc\n'}
+[3.330146] (motor_controller) StdoutLine: {'line': b'byte-compiling /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/motor_controller/lib/python3.12/site-packages/motor_controller/__init__.py to __init__.cpython-312.pyc\n'}
+[3.330487] (motor_controller) StdoutLine: {'line': b'byte-compiling /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/motor_controller/lib/python3.12/site-packages/motor_controller/wheel_encoder.py to wheel_encoder.cpython-312.pyc\n'}
+[3.332884] (motor_controller) StdoutLine: {'line': b'running install_data\n'}
+[3.333278] (motor_controller) StdoutLine: {'line': b'creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/motor_controller/share/ament_index\n'}
+[3.333448] (motor_controller) StdoutLine: {'line': b'creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/motor_controller/share/ament_index/resource_index\n'}
+[3.333602] (motor_controller) StdoutLine: {'line': b'creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/motor_controller/share/ament_index/resource_index/packages\n'}
+[3.333776] (motor_controller) StdoutLine: {'line': b'copying resource/motor_controller -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/motor_controller/share/ament_index/resource_index/packages\n'}
+[3.333900] (motor_controller) StdoutLine: {'line': b'copying package.xml -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/motor_controller/share/motor_controller\n'}
+[3.334017] (motor_controller) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.339949] (hardware_software) StdoutLine: {'line': b'creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/lib/python3.12/site-packages/hardware_software\n'}
+[3.340306] (hardware_software) StdoutLine: {'line': b'copying /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/hardware_software/build/lib/hardware_software/__init__.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/lib/python3.12/site-packages/hardware_software\n'}
+[3.341556] (hardware_software) StdoutLine: {'line': b'copying /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/hardware_software/build/lib/hardware_software/mqtt_encoder.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/lib/python3.12/site-packages/hardware_software\n'}
+[3.341799] (hardware_software) StdoutLine: {'line': b'byte-compiling /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/lib/python3.12/site-packages/hardware_software/__init__.py to __init__.cpython-312.pyc\n'}
+[3.343589] (imu_reader) StdoutLine: {'line': b'creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/imu_reader/lib/python3.12/site-packages/imu_reader\n'}
+[3.343927] (hardware_software) StdoutLine: {'line': b'byte-compiling /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/lib/python3.12/site-packages/hardware_software/mqtt_encoder.py to mqtt_encoder.cpython-312.pyc\n'}
+[3.344157] (imu_reader) StdoutLine: {'line': b'copying /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/imu_reader/build/lib/imu_reader/imu_reader_node.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/imu_reader/lib/python3.12/site-packages/imu_reader\n'}
+[3.344289] (imu_reader) StdoutLine: {'line': b'copying /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/imu_reader/build/lib/imu_reader/__init__.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/imu_reader/lib/python3.12/site-packages/imu_reader\n'}
+[3.344411] (hardware_software) StdoutLine: {'line': b'running install_data\n'}
+[3.344602] (imu_reader) StdoutLine: {'line': b'byte-compiling /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/imu_reader/lib/python3.12/site-packages/imu_reader/imu_reader_node.py to imu_reader_node.cpython-312.pyc\n'}
+[3.344820] (hardware_software) StdoutLine: {'line': b'creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/ament_index\n'}
+[3.344941] (hardware_software) StdoutLine: {'line': b'creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/ament_index/resource_index\n'}
+[3.345053] (hardware_software) StdoutLine: {'line': b'creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/ament_index/resource_index/packages\n'}
+[3.345172] (hardware_software) StdoutLine: {'line': b'copying resource/hardware_software -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/ament_index/resource_index/packages\n'}
+[3.347256] (hardware_software) StdoutLine: {'line': b'copying package.xml -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software\n'}
+[3.347910] (hardware_software) StdoutLine: {'line': b'creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/launch\n'}
+[3.348099] (hardware_software) StdoutLine: {'line': b'copying launch/tf.launch.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/launch/\n'}
+[3.348214] (imu_reader) StdoutLine: {'line': b'byte-compiling /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/imu_reader/lib/python3.12/site-packages/imu_reader/__init__.py to __init__.cpython-312.pyc\n'}
+[3.348333] (hardware_software) StdoutLine: {'line': b'copying launch/hardware_setup.launch.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/launch/\n'}
+[3.348447] (imu_reader) StdoutLine: {'line': b'running install_data\n'}
+[3.349069] (imu_reader) StdoutLine: {'line': b'creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/imu_reader/share/ament_index\n'}
+[3.349196] (imu_reader) StdoutLine: {'line': b'creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/imu_reader/share/ament_index/resource_index\n'}
+[3.349307] (hardware_software) StdoutLine: {'line': b'copying launch/navigation_launch.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/launch/\n'}
+[3.349421] (imu_reader) StdoutLine: {'line': b'creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/imu_reader/share/ament_index/resource_index/packages\n'}
+[3.349544] (imu_reader) StdoutLine: {'line': b'copying resource/imu_reader -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/imu_reader/share/ament_index/resource_index/packages\n'}
+[3.349644] (imu_reader) StdoutLine: {'line': b'copying package.xml -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/imu_reader/share/imu_reader\n'}
+[3.349723] (imu_reader) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.349802] (hardware_software) StdoutLine: {'line': b'copying launch/hardware.launch.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/launch/\n'}
+[3.350351] (hardware_software) StdoutLine: {'line': b'copying launch/robot_nav.launch.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/launch/\n'}
+[3.350960] (hardware_software) StdoutLine: {'line': b'copying launch/robot_explore.launch.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/launch/\n'}
+[3.351530] (hardware_software) StdoutLine: {'line': b'copying launch/slam.launch.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/launch/\n'}
+[3.352310] (hardware_software) StdoutLine: {'line': b'copying launch/rviz.launch.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/launch/\n'}
+[3.353124] (hardware_software) StdoutLine: {'line': b'creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/urdf\n'}
+[3.353305] (hardware_software) StdoutLine: {'line': b'copying urdf/turtlebot3_burger.urdf -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/urdf/\n'}
+[3.353809] (hardware_software) StdoutLine: {'line': b'copying urdf/diffbot_description.urdf.xacro -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/urdf/\n'}
+[3.354585] (hardware_software) StdoutLine: {'line': b'copying urdf/turtlebot3_waffle.urdf -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/urdf/\n'}
+[3.357407] (hardware_software) StdoutLine: {'line': b'creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/params\n'}
+[3.357684] (hardware_software) StdoutLine: {'line': b'copying params/explore_params.yaml -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/params/\n'}
+[3.359549] (hardware_software) StdoutLine: {'line': b'copying params/slam.yaml -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/params/\n'}
+[3.359900] (hardware_software) StdoutLine: {'line': b'copying params/nav2_params.yaml -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/params/\n'}
+[3.360891] (hardware_software) StdoutLine: {'line': b'creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/rviz\n'}
+[3.362554] (hardware_software) StdoutLine: {'line': b'copying rviz/basic.rviz -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/rviz/\n'}
+[3.362786] (hardware_software) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.366226] (explore_lite) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.372220] (motor_controller) StdoutLine: {'line': b'Copying ../../build/motor_controller/motor_controller.egg-info to /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/motor_controller/lib/python3.12/site-packages/motor_controller-0.0.0-py3.12.egg-info\n'}
+[3.374068] (motor_controller) StdoutLine: {'line': b'running install_scripts\n'}
+[3.389595] (imu_reader) StdoutLine: {'line': b'Copying ../../build/imu_reader/imu_reader.egg-info to /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/imu_reader/lib/python3.12/site-packages/imu_reader-0.0.0-py3.12.egg-info\n'}
+[3.393553] (imu_reader) StdoutLine: {'line': b'running install_scripts\n'}
+[3.416868] (hardware_software) StdoutLine: {'line': b'Copying ../../build/hardware_software/hardware_software.egg-info to /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/lib/python3.12/site-packages/hardware_software-0.0.0-py3.12.egg-info\n'}
+[3.417151] (hardware_software) StdoutLine: {'line': b'running install_scripts\n'}
+[3.418945] (-) TimerEvent: {}
+[3.519358] (-) TimerEvent: {}
+[3.583965] (motor_controller) StdoutLine: {'line': b'Installing motor_driver script to /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/motor_controller/lib/motor_controller\n'}
+[3.584244] (motor_controller) StdoutLine: {'line': b'Installing wheel_encoder script to /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/motor_controller/lib/motor_controller\n'}
+[3.584502] (motor_controller) StdoutLine: {'line': b"writing list of installed files to '/home/fyp/Desktop/swarm_repo/robot/ros2ws/build/motor_controller/install.log'\n"}
+[3.590619] (explore_lite) StdoutLine: {'line': b'-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[3.604106] (imu_reader) StdoutLine: {'line': b'Installing imu_reader_node script to /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/imu_reader/lib/imu_reader\n'}
+[3.604372] (imu_reader) StdoutLine: {'line': b"writing list of installed files to '/home/fyp/Desktop/swarm_repo/robot/ros2ws/build/imu_reader/install.log'\n"}
+[3.620225] (-) TimerEvent: {}
+[3.644097] (hardware_software) StdoutLine: {'line': b'Installing ros2_mqtt_encoder script to /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/lib/hardware_software\n'}
+[3.645166] (hardware_software) StdoutLine: {'line': b"writing list of installed files to '/home/fyp/Desktop/swarm_repo/robot/ros2ws/build/hardware_software/install.log'\n"}
+[3.646358] (explore_lite) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[3.721851] (-) TimerEvent: {}
+[3.725599] (motor_controller) CommandEnded: {'returncode': 0}
+[3.746579] (motor_controller) JobEnded: {'identifier': 'motor_controller', 'rc': 0}
+[3.748179] (my_robot_control) JobStarted: {'identifier': 'my_robot_control'}
+[3.756831] (imu_reader) CommandEnded: {'returncode': 0}
+[3.764680] (imu_reader) JobEnded: {'identifier': 'imu_reader', 'rc': 0}
+[3.766854] (my_robot_control) JobProgress: {'identifier': 'my_robot_control', 'progress': 'cmake'}
+[3.768581] (my_robot_control) Command: {'cmd': ['/usr/bin/cmake', '/home/fyp/Desktop/swarm_repo/robot/ros2ws/src/my_robot_control', '-DCMAKE_INSTALL_PREFIX=/home/fyp/Desktop/swarm_repo/robot/ros2ws/install/my_robot_control'], 'cwd': '/home/fyp/Desktop/swarm_repo/robot/ros2ws/build/my_robot_control', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'fyp', 'SSH_CLIENT': '192.168.1.59 41366 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/fyp', 'OLDPWD': '/home/fyp', 'SSH_TTY': '/dev/pts/4', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'fyp', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'PATH': '/home/fyp/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/fyp/.local/bin:/home/fyp/.local/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/fyp/Desktop/swarm_repo/robot/ros2ws/build/my_robot_control', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.59 41366 192.168.1.136 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/home/fyp/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[3.777581] (explore_lite) StdoutLine: {'line': b'-- Found tf2_ros: 0.36.10 (/opt/ros/jazzy/share/tf2_ros/cmake)\n'}
+[3.778728] (hardware_software) CommandEnded: {'returncode': 0}
+[3.791109] (hardware_software) JobEnded: {'identifier': 'hardware_software', 'rc': 0}
+[3.821985] (-) TimerEvent: {}
+[3.877568] (my_robot_control) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[3.922111] (-) TimerEvent: {}
+[3.983613] (my_robot_control) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[4.011053] (my_robot_control) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[4.022211] (-) TimerEvent: {}
+[4.122590] (-) TimerEvent: {}
+[4.134397] (explore_lite) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.36.10 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)\n'}
+[4.183228] (explore_lite) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)\n'}
+[4.187000] (explore_lite) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[4.187308] (explore_lite) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[4.188134] (my_robot_control) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[4.198759] (explore_lite) StdoutLine: {'line': b'-- Found nav2_msgs: 1.3.6 (/opt/ros/jazzy/share/nav2_msgs/cmake)\n'}
+[4.204014] (my_robot_control) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[4.204371] (my_robot_control) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[4.204962] (my_robot_control) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[4.219610] (my_robot_control) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[4.222681] (-) TimerEvent: {}
+[4.323047] (-) TimerEvent: {}
+[4.418765] (my_robot_control) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[4.423142] (-) TimerEvent: {}
+[4.430794] (explore_lite) StdoutLine: {'line': b'-- Found map_msgs: 2.4.1 (/opt/ros/jazzy/share/map_msgs/cmake)\n'}
+[4.434272] (my_robot_control) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[4.434662] (my_robot_control) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[4.435396] (my_robot_control) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[4.441553] (my_robot_control) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[4.486766] (explore_lite) StdoutLine: {'line': b'-- Found visualization_msgs: 5.3.6 (/opt/ros/jazzy/share/visualization_msgs/cmake)\n'}
+[4.523270] (-) TimerEvent: {}
+[4.544461] (explore_lite) StdoutLine: {'line': b'-- Found nav2_costmap_2d: 1.3.6 (/opt/ros/jazzy/share/nav2_costmap_2d/cmake)\n'}
+[4.623384] (-) TimerEvent: {}
+[4.649390] (my_robot_control) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[4.723503] (-) TimerEvent: {}
+[4.823830] (-) TimerEvent: {}
+[4.856007] (my_robot_control) StdoutLine: {'line': b'-- Found rclcpp: 28.1.9 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[4.877446] (explore_lite) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[4.923948] (-) TimerEvent: {}
+[4.936929] (my_robot_control) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[4.965214] (my_robot_control) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[4.996669] (my_robot_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.024082] (-) TimerEvent: {}
+[5.033448] (my_robot_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.097334] (explore_lite) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_gtest/cmake)\n'}
+[5.108825] (explore_lite) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[5.118270] (explore_lite) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[5.124204] (-) TimerEvent: {}
+[5.165039] (my_robot_control) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[5.171901] (my_robot_control) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[5.224349] (-) TimerEvent: {}
+[5.324821] (-) TimerEvent: {}
+[5.338017] (my_robot_control) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[5.339848] (explore_lite) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[5.341788] (explore_lite) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[5.361536] (explore_lite) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[5.362163] (explore_lite) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/fyp/Desktop/swarm_repo/robot/ros2ws/src/explore/include;$<BUILD_INTERFACE:/home/fyp/Desktop/swarm_repo/robot/ros2ws/src/explore/include>\n'}
+[5.362321] (explore_lite) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[5.364638] (explore_lite) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[5.364838] (explore_lite) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[5.367033] (explore_lite) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.367990] (my_robot_control) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[5.369146] (explore_lite) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[5.372563] (explore_lite) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[5.372785] (explore_lite) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[5.374619] (explore_lite) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.383304] (explore_lite) StdoutLine: {'line': b'-- Configuring done (5.3s)\n'}
+[5.406736] (my_robot_control) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.424925] (-) TimerEvent: {}
+[5.525260] (-) TimerEvent: {}
+[5.530841] (my_robot_control) StdoutLine: {'line': b'-- Found rplidar_ros: 2.1.0 (/opt/ros/jazzy/share/rplidar_ros/cmake)\n'}
+[5.621666] (explore_lite) StdoutLine: {'line': b'-- Generating done (0.2s)\n'}
+[5.625372] (-) TimerEvent: {}
+[5.640584] (explore_lite) StdoutLine: {'line': b'-- Build files have been written to: /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/explore_lite\n'}
+[5.672317] (explore_lite) CommandEnded: {'returncode': 0}
+[5.673089] (explore_lite) JobProgress: {'identifier': 'explore_lite', 'progress': 'build'}
+[5.673909] (explore_lite) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/fyp/Desktop/swarm_repo/robot/ros2ws/build/explore_lite', '--', '-j4', '-l4'], 'cwd': '/home/fyp/Desktop/swarm_repo/robot/ros2ws/build/explore_lite', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'fyp', 'SSH_CLIENT': '192.168.1.59 41366 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/fyp', 'OLDPWD': '/home/fyp', 'SSH_TTY': '/dev/pts/4', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'fyp', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'PATH': '/home/fyp/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/fyp/.local/bin:/home/fyp/.local/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/fyp/Desktop/swarm_repo/robot/ros2ws/build/explore_lite', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.59 41366 192.168.1.136 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/home/fyp/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[5.725521] (-) TimerEvent: {}
+[5.726811] (my_robot_control) StdoutLine: {'line': b'-- Found ros2_control: 4.29.0 (/opt/ros/jazzy/share/ros2_control/cmake)\n'}
+[5.734094] (my_robot_control) StdoutLine: {'line': b'-- Found hardware_interface: 4.29.0 (/opt/ros/jazzy/share/hardware_interface/cmake)\n'}
+[5.792843] (explore_lite) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[5.814640] (explore_lite) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/explore.dir/src/costmap_client.cpp.o\x1b[0m\n'}
+[5.824351] (explore_lite) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[5.825598] (-) TimerEvent: {}
+[5.837263] (explore_lite) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/explore.dir/src/explore.cpp.o\x1b[0m\n'}
+[5.925735] (-) TimerEvent: {}
+[6.063199] (-) TimerEvent: {}
+[6.163563] (-) TimerEvent: {}
+[6.263905] (-) TimerEvent: {}
+[6.364581] (-) TimerEvent: {}
+[6.465563] (-) TimerEvent: {}
+[6.569332] (-) TimerEvent: {}
+[6.669784] (-) TimerEvent: {}
+[6.719553] (my_robot_control) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[6.769925] (-) TimerEvent: {}
+[6.871450] (-) TimerEvent: {}
+[6.971904] (-) TimerEvent: {}
+[7.020461] (my_robot_control) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[7.020935] (my_robot_control) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/fyp/Desktop/swarm_repo/robot/ros2ws/src/my_robot_control/include\n'}
+[7.021141] (my_robot_control) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[7.022781] (my_robot_control) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[7.024933] (my_robot_control) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[7.025871] (my_robot_control) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[7.027742] (my_robot_control) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[7.032187] (my_robot_control) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[7.035216] (my_robot_control) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[7.038523] (my_robot_control) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[7.041682] (my_robot_control) StdoutLine: {'line': b'-- Configuring done (3.3s)\n'}
+[7.072110] (-) TimerEvent: {}
+[7.172586] (-) TimerEvent: {}
+[7.197893] (my_robot_control) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[7.209008] (my_robot_control) StdoutLine: {'line': b'-- Build files have been written to: /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/my_robot_control\n'}
+[7.248672] (my_robot_control) CommandEnded: {'returncode': 0}
+[7.249366] (my_robot_control) JobProgress: {'identifier': 'my_robot_control', 'progress': 'build'}
+[7.254334] (my_robot_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/fyp/Desktop/swarm_repo/robot/ros2ws/build/my_robot_control', '--', '-j4', '-l4'], 'cwd': '/home/fyp/Desktop/swarm_repo/robot/ros2ws/build/my_robot_control', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'fyp', 'SSH_CLIENT': '192.168.1.59 41366 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/fyp', 'OLDPWD': '/home/fyp', 'SSH_TTY': '/dev/pts/4', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'fyp', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'PATH': '/home/fyp/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/fyp/.local/bin:/home/fyp/.local/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/fyp/Desktop/swarm_repo/robot/ros2ws/build/my_robot_control', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.59 41366 192.168.1.136 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/home/fyp/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[7.276657] (-) TimerEvent: {}
+[7.378828] (-) TimerEvent: {}
+[7.460755] (my_robot_control) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/my_robot_control.dir/src/motor_driver.cpp.o\x1b[0m\n'}
+[7.479062] (-) TimerEvent: {}
+[7.481432] (my_robot_control) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/my_robot_control.dir/src/diffbot_system.cpp.o\x1b[0m\n'}
+[7.579502] (-) TimerEvent: {}
+[7.683806] (-) TimerEvent: {}
+[7.784214] (-) TimerEvent: {}
+[7.886344] (-) TimerEvent: {}
+[7.986827] (-) TimerEvent: {}
+[8.066665] (explore_lite) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[8.086957] (-) TimerEvent: {}
+[8.187375] (-) TimerEvent: {}
+[8.287813] (-) TimerEvent: {}
+[8.388552] (-) TimerEvent: {}
+[8.491857] (-) TimerEvent: {}
+[8.592365] (-) TimerEvent: {}
+[8.692894] (-) TimerEvent: {}
+[8.794378] (-) TimerEvent: {}
+[8.895107] (-) TimerEvent: {}
+[8.998611] (-) TimerEvent: {}
+[9.099111] (-) TimerEvent: {}
+[9.199618] (-) TimerEvent: {}
+[9.300097] (-) TimerEvent: {}
+[9.400606] (-) TimerEvent: {}
+[9.453660] (explore_lite) StdoutLine: {'line': b'[ 50%] Built target gtest_main\n'}
+[9.501622] (-) TimerEvent: {}
+[9.504671] (explore_lite) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/explore.dir/src/frontier_search.cpp.o\x1b[0m\n'}
+[9.605614] (-) TimerEvent: {}
+[9.706350] (-) TimerEvent: {}
+[9.807269] (-) TimerEvent: {}
+[9.913603] (-) TimerEvent: {}
+[10.014107] (-) TimerEvent: {}
+[10.114585] (-) TimerEvent: {}
+[10.215052] (-) TimerEvent: {}
+[10.315755] (-) TimerEvent: {}
+[10.416623] (-) TimerEvent: {}
+[10.519024] (-) TimerEvent: {}
+[10.619475] (-) TimerEvent: {}
+[10.722877] (-) TimerEvent: {}
+[10.823466] (-) TimerEvent: {}
+[10.926602] (-) TimerEvent: {}
+[11.065740] (-) TimerEvent: {}
+[11.168613] (-) TimerEvent: {}
+[11.269116] (-) TimerEvent: {}
+[11.369614] (-) TimerEvent: {}
+[11.470319] (-) TimerEvent: {}
+[11.571060] (-) TimerEvent: {}
+[11.674609] (-) TimerEvent: {}
+[11.775119] (-) TimerEvent: {}
+[11.879847] (-) TimerEvent: {}
+[11.980360] (-) TimerEvent: {}
+[12.081114] (-) TimerEvent: {}
+[12.184767] (-) TimerEvent: {}
+[12.285685] (-) TimerEvent: {}
+[12.386393] (-) TimerEvent: {}
+[12.487132] (-) TimerEvent: {}
+[12.590843] (-) TimerEvent: {}
+[12.691574] (-) TimerEvent: {}
+[12.792257] (-) TimerEvent: {}
+[12.892963] (-) TimerEvent: {}
+[12.996846] (-) TimerEvent: {}
+[13.097572] (-) TimerEvent: {}
+[13.198325] (-) TimerEvent: {}
+[13.301613] (-) TimerEvent: {}
+[13.402125] (-) TimerEvent: {}
+[13.502958] (-) TimerEvent: {}
+[13.603736] (-) TimerEvent: {}
+[13.707000] (-) TimerEvent: {}
+[13.811604] (-) TimerEvent: {}
+[13.912100] (-) TimerEvent: {}
+[14.016101] (-) TimerEvent: {}
+[14.116776] (-) TimerEvent: {}
+[14.217521] (-) TimerEvent: {}
+[14.319608] (-) TimerEvent: {}
+[14.420333] (-) TimerEvent: {}
+[14.521234] (-) TimerEvent: {}
+[14.626612] (-) TimerEvent: {}
+[14.727089] (-) TimerEvent: {}
+[14.827815] (-) TimerEvent: {}
+[14.928537] (-) TimerEvent: {}
+[15.031603] (-) TimerEvent: {}
+[15.132231] (-) TimerEvent: {}
+[15.232929] (-) TimerEvent: {}
+[15.333621] (-) TimerEvent: {}
+[15.436607] (-) TimerEvent: {}
+[15.537110] (-) TimerEvent: {}
+[15.639604] (-) TimerEvent: {}
+[15.741605] (-) TimerEvent: {}
+[15.842085] (-) TimerEvent: {}
+[15.942599] (-) TimerEvent: {}
+[16.138601] (-) TimerEvent: {}
+[16.239064] (-) TimerEvent: {}
+[16.340806] (-) TimerEvent: {}
+[16.441307] (-) TimerEvent: {}
+[16.542610] (-) TimerEvent: {}
+[16.643114] (-) TimerEvent: {}
+[16.746653] (-) TimerEvent: {}
+[16.848602] (-) TimerEvent: {}
+[16.873093] (explore_lite) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[16.948744] (-) TimerEvent: {}
+[17.049190] (-) TimerEvent: {}
+[17.149938] (-) TimerEvent: {}
+[17.252640] (-) TimerEvent: {}
+[17.353481] (-) TimerEvent: {}
+[17.454792] (-) TimerEvent: {}
+[17.557642] (-) TimerEvent: {}
+[17.658105] (-) TimerEvent: {}
+[17.759634] (-) TimerEvent: {}
+[17.801918] (explore_lite) StdoutLine: {'line': b'[ 70%] Built target gtest\n'}
+[17.859777] (-) TimerEvent: {}
+[17.918938] (explore_lite) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/test_explore.dir/test/test_explore.cpp.o\x1b[0m\n'}
+[17.962610] (-) TimerEvent: {}
+[18.063089] (-) TimerEvent: {}
+[18.163599] (-) TimerEvent: {}
+[18.264346] (-) TimerEvent: {}
+[18.369603] (-) TimerEvent: {}
+[18.470120] (-) TimerEvent: {}
+[18.573598] (-) TimerEvent: {}
+[18.674086] (-) TimerEvent: {}
+[18.774832] (-) TimerEvent: {}
+[18.875591] (-) TimerEvent: {}
+[18.978604] (-) TimerEvent: {}
+[19.079284] (-) TimerEvent: {}
+[19.180015] (-) TimerEvent: {}
+[19.281607] (-) TimerEvent: {}
+[19.382303] (-) TimerEvent: {}
+[19.487630] (-) TimerEvent: {}
+[19.588118] (-) TimerEvent: {}
+[19.688845] (-) TimerEvent: {}
+[19.789593] (-) TimerEvent: {}
+[19.890262] (-) TimerEvent: {}
+[19.994603] (-) TimerEvent: {}
+[20.095098] (-) TimerEvent: {}
+[20.195617] (-) TimerEvent: {}
+[20.296370] (-) TimerEvent: {}
+[20.397603] (-) TimerEvent: {}
+[20.498084] (-) TimerEvent: {}
+[20.603607] (-) TimerEvent: {}
+[20.704077] (-) TimerEvent: {}
+[20.804545] (-) TimerEvent: {}
+[20.905109] (-) TimerEvent: {}
+[21.005682] (-) TimerEvent: {}
+[21.067798] (my_robot_control) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libmy_robot_control.so\x1b[0m\n'}
+[21.105821] (-) TimerEvent: {}
+[21.206298] (-) TimerEvent: {}
+[21.307937] (-) TimerEvent: {}
+[21.356209] (explore_lite) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking CXX executable test_explore\x1b[0m\n'}
+[21.408319] (-) TimerEvent: {}
+[21.509583] (-) TimerEvent: {}
+[21.611967] (-) TimerEvent: {}
+[21.713353] (-) TimerEvent: {}
+[21.816651] (-) TimerEvent: {}
+[21.917400] (-) TimerEvent: {}
+[22.018994] (-) TimerEvent: {}
+[22.122769] (-) TimerEvent: {}
+[22.223333] (-) TimerEvent: {}
+[22.325641] (-) TimerEvent: {}
+[22.426227] (-) TimerEvent: {}
+[22.528707] (-) TimerEvent: {}
+[22.629791] (-) TimerEvent: {}
+[22.730619] (-) TimerEvent: {}
+[22.831833] (-) TimerEvent: {}
+[22.933789] (-) TimerEvent: {}
+[22.965705] (my_robot_control) StdoutLine: {'line': b'[100%] Built target my_robot_control\n'}
+[23.018593] (my_robot_control) CommandEnded: {'returncode': 0}
+[23.019155] (my_robot_control) JobProgress: {'identifier': 'my_robot_control', 'progress': 'install'}
+[23.035596] (-) TimerEvent: {}
+[23.059688] (my_robot_control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/fyp/Desktop/swarm_repo/robot/ros2ws/build/my_robot_control'], 'cwd': '/home/fyp/Desktop/swarm_repo/robot/ros2ws/build/my_robot_control', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'fyp', 'SSH_CLIENT': '192.168.1.59 41366 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/fyp', 'OLDPWD': '/home/fyp', 'SSH_TTY': '/dev/pts/4', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'fyp', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'PATH': '/home/fyp/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/fyp/.local/bin:/home/fyp/.local/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/fyp/Desktop/swarm_repo/robot/ros2ws/build/my_robot_control', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.59 41366 192.168.1.136 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/home/fyp/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[23.105670] (my_robot_control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[23.109639] (my_robot_control) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/my_robot_control/share/my_robot_control//launch\n'}
+[23.110000] (my_robot_control) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/my_robot_control/share/my_robot_control//launch/rplidar.launch.py\n'}
+[23.110913] (my_robot_control) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/my_robot_control/share/my_robot_control//launch/wheel_control.launch.py\n'}
+[23.111774] (my_robot_control) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/my_robot_control/share/my_robot_control//config\n'}
+[23.112207] (my_robot_control) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/my_robot_control/share/my_robot_control//config/diffbot_controller.yaml\n'}
+[23.112599] (my_robot_control) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/my_robot_control/share/my_robot_control//ros2_control\n'}
+[23.112967] (my_robot_control) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/my_robot_control/share/my_robot_control//ros2_control/diffbot.ros2_control.xacro\n'}
+[23.113520] (my_robot_control) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/my_robot_control/share/my_robot_control//urdf\n'}
+[23.113936] (my_robot_control) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/my_robot_control/share/my_robot_control//urdf/diffbot.materials.xacro\n'}
+[23.114407] (my_robot_control) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/my_robot_control/share/my_robot_control//urdf/diffbot_description.urdf.xacro\n'}
+[23.116657] (my_robot_control) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/my_robot_control/share/my_robot_control//urdf/diffbot.urdf.xacro\n'}
+[23.117234] (my_robot_control) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/my_robot_control/include/\n'}
+[23.117527] (my_robot_control) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/my_robot_control/include//my_robot_control\n'}
+[23.119892] (my_robot_control) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/my_robot_control/include//my_robot_control/diffbot_system.hpp\n'}
+[23.120327] (my_robot_control) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/my_robot_control/include//my_robot_control/motor_driver.hpp\n'}
+[23.120591] (my_robot_control) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/my_robot_control/lib/libmy_robot_control.so\n'}
+[23.128007] (my_robot_control) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/fyp/Desktop/swarm_repo/robot/ros2ws/install/my_robot_control/lib/libmy_robot_control.so" to ""\n'}
+[23.128476] (my_robot_control) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/my_robot_control/share/my_robot_control/ros2_control_hardware.xml\n'}
+[23.129734] (my_robot_control) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/my_robot_control/share/ament_index/resource_index/package_run_dependencies/my_robot_control\n'}
+[23.130511] (my_robot_control) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/my_robot_control/share/ament_index/resource_index/parent_prefix_path/my_robot_control\n'}
+[23.131601] (my_robot_control) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/my_robot_control/share/my_robot_control/environment/ament_prefix_path.sh\n'}
+[23.131891] (my_robot_control) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/my_robot_control/share/my_robot_control/environment/ament_prefix_path.dsv\n'}
+[23.132019] (my_robot_control) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/my_robot_control/share/my_robot_control/environment/path.sh\n'}
+[23.132154] (my_robot_control) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/my_robot_control/share/my_robot_control/environment/path.dsv\n'}
+[23.132276] (my_robot_control) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/my_robot_control/share/my_robot_control/local_setup.bash\n'}
+[23.137163] (-) TimerEvent: {}
+[23.138630] (my_robot_control) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/my_robot_control/share/my_robot_control/local_setup.sh\n'}
+[23.139691] (my_robot_control) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/my_robot_control/share/my_robot_control/local_setup.zsh\n'}
+[23.140171] (my_robot_control) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/my_robot_control/share/my_robot_control/local_setup.dsv\n'}
+[23.140326] (my_robot_control) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/my_robot_control/share/my_robot_control/package.dsv\n'}
+[23.140460] (my_robot_control) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/my_robot_control/share/ament_index/resource_index/packages/my_robot_control\n'}
+[23.140646] (my_robot_control) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/my_robot_control/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/my_robot_control\n'}
+[23.140785] (my_robot_control) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/my_robot_control/share/my_robot_control/cmake/my_robot_controlConfig.cmake\n'}
+[23.144092] (my_robot_control) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/my_robot_control/share/my_robot_control/cmake/my_robot_controlConfig-version.cmake\n'}
+[23.144701] (my_robot_control) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/my_robot_control/share/my_robot_control/package.xml\n'}
+[23.157653] (my_robot_control) CommandEnded: {'returncode': 0}
+[23.227804] (my_robot_control) JobEnded: {'identifier': 'my_robot_control', 'rc': 0}
+[23.236794] (-) TimerEvent: {}
+[23.244230] (explore_lite) StdoutLine: {'line': b'[ 90%] Built target test_explore\n'}
+[23.336950] (-) TimerEvent: {}
+[23.440331] (-) TimerEvent: {}
+[23.540759] (-) TimerEvent: {}
+[23.641177] (-) TimerEvent: {}
+[23.741633] (-) TimerEvent: {}
+[23.842244] (-) TimerEvent: {}
+[23.942837] (-) TimerEvent: {}
+[24.043261] (-) TimerEvent: {}
+[24.143721] (-) TimerEvent: {}
+[24.244147] (-) TimerEvent: {}
+[24.344526] (-) TimerEvent: {}
+[24.444910] (-) TimerEvent: {}
+[24.545311] (-) TimerEvent: {}
+[24.645743] (-) TimerEvent: {}
+[24.746115] (-) TimerEvent: {}
+[24.846514] (-) TimerEvent: {}
+[24.946911] (-) TimerEvent: {}
+[25.047286] (-) TimerEvent: {}
+[25.147681] (-) TimerEvent: {}
+[25.248038] (-) TimerEvent: {}
+[25.348388] (-) TimerEvent: {}
+[25.448814] (-) TimerEvent: {}
+[25.549200] (-) TimerEvent: {}
+[25.649576] (-) TimerEvent: {}
+[25.749937] (-) TimerEvent: {}
+[25.850424] (-) TimerEvent: {}
+[25.950824] (-) TimerEvent: {}
+[26.051330] (-) TimerEvent: {}
+[26.151739] (-) TimerEvent: {}
+[26.252539] (-) TimerEvent: {}
+[26.352896] (-) TimerEvent: {}
+[26.453464] (-) TimerEvent: {}
+[26.553976] (-) TimerEvent: {}
+[26.654510] (-) TimerEvent: {}
+[26.754889] (-) TimerEvent: {}
+[26.855465] (-) TimerEvent: {}
+[26.955898] (-) TimerEvent: {}
+[27.056487] (-) TimerEvent: {}
+[27.156898] (-) TimerEvent: {}
+[27.257288] (-) TimerEvent: {}
+[27.357857] (-) TimerEvent: {}
+[27.458258] (-) TimerEvent: {}
+[27.558673] (-) TimerEvent: {}
+[27.659314] (-) TimerEvent: {}
+[27.759720] (-) TimerEvent: {}
+[27.860244] (-) TimerEvent: {}
+[27.960644] (-) TimerEvent: {}
+[28.061197] (-) TimerEvent: {}
+[28.161602] (-) TimerEvent: {}
+[28.261963] (-) TimerEvent: {}
+[28.362513] (-) TimerEvent: {}
+[28.462903] (-) TimerEvent: {}
+[28.563330] (-) TimerEvent: {}
+[28.663913] (-) TimerEvent: {}
+[28.764300] (-) TimerEvent: {}
+[28.864862] (-) TimerEvent: {}
+[28.965240] (-) TimerEvent: {}
+[29.065828] (-) TimerEvent: {}
+[29.166238] (-) TimerEvent: {}
+[29.266606] (-) TimerEvent: {}
+[29.367185] (-) TimerEvent: {}
+[29.467577] (-) TimerEvent: {}
+[29.567950] (-) TimerEvent: {}
+[29.668500] (-) TimerEvent: {}
+[29.768886] (-) TimerEvent: {}
+[29.869420] (-) TimerEvent: {}
+[29.969818] (-) TimerEvent: {}
+[30.070427] (-) TimerEvent: {}
+[30.170825] (-) TimerEvent: {}
+[30.271184] (-) TimerEvent: {}
+[30.371736] (-) TimerEvent: {}
+[30.472122] (-) TimerEvent: {}
+[30.572693] (-) TimerEvent: {}
+[30.673058] (-) TimerEvent: {}
+[30.773577] (-) TimerEvent: {}
+[30.873952] (-) TimerEvent: {}
+[30.974483] (-) TimerEvent: {}
+[31.074879] (-) TimerEvent: {}
+[31.175410] (-) TimerEvent: {}
+[31.275817] (-) TimerEvent: {}
+[31.376191] (-) TimerEvent: {}
+[31.476555] (-) TimerEvent: {}
+[31.576919] (-) TimerEvent: {}
+[31.677263] (-) TimerEvent: {}
+[31.777578] (-) TimerEvent: {}
+[31.877897] (-) TimerEvent: {}
+[31.978231] (-) TimerEvent: {}
+[32.078558] (-) TimerEvent: {}
+[32.178870] (-) TimerEvent: {}
+[32.279174] (-) TimerEvent: {}
+[32.379483] (-) TimerEvent: {}
+[32.479796] (-) TimerEvent: {}
+[32.580117] (-) TimerEvent: {}
+[32.680439] (-) TimerEvent: {}
+[32.780766] (-) TimerEvent: {}
+[32.881072] (-) TimerEvent: {}
+[32.981396] (-) TimerEvent: {}
+[33.081740] (-) TimerEvent: {}
+[33.182100] (-) TimerEvent: {}
+[33.282555] (-) TimerEvent: {}
+[33.382926] (-) TimerEvent: {}
+[33.483318] (-) TimerEvent: {}
+[33.583711] (-) TimerEvent: {}
+[33.684098] (-) TimerEvent: {}
+[33.784510] (-) TimerEvent: {}
+[33.884879] (-) TimerEvent: {}
+[33.985263] (-) TimerEvent: {}
+[34.085674] (-) TimerEvent: {}
+[34.186087] (-) TimerEvent: {}
+[34.286601] (-) TimerEvent: {}
+[34.386960] (-) TimerEvent: {}
+[34.487364] (-) TimerEvent: {}
+[34.587767] (-) TimerEvent: {}
+[34.688105] (-) TimerEvent: {}
+[34.788391] (-) TimerEvent: {}
+[34.888655] (-) TimerEvent: {}
+[34.988910] (-) TimerEvent: {}
+[35.089239] (-) TimerEvent: {}
+[35.189679] (-) TimerEvent: {}
+[35.290066] (-) TimerEvent: {}
+[35.390414] (-) TimerEvent: {}
+[35.490792] (-) TimerEvent: {}
+[35.591179] (-) TimerEvent: {}
+[35.691583] (-) TimerEvent: {}
+[35.791917] (-) TimerEvent: {}
+[35.892218] (-) TimerEvent: {}
+[35.992617] (-) TimerEvent: {}
+[36.093148] (-) TimerEvent: {}
+[36.193566] (-) TimerEvent: {}
+[36.294050] (-) TimerEvent: {}
+[36.394518] (-) TimerEvent: {}
+[36.494945] (-) TimerEvent: {}
+[36.496937] (explore_lite) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable explore\x1b[0m\n'}
+[36.595056] (-) TimerEvent: {}
+[36.695405] (-) TimerEvent: {}
+[36.795893] (-) TimerEvent: {}
+[36.896579] (-) TimerEvent: {}
+[36.997008] (-) TimerEvent: {}
+[37.097485] (-) TimerEvent: {}
+[37.197913] (-) TimerEvent: {}
+[37.298370] (-) TimerEvent: {}
+[37.398818] (-) TimerEvent: {}
+[37.499171] (-) TimerEvent: {}
+[37.599601] (-) TimerEvent: {}
+[37.700137] (-) TimerEvent: {}
+[37.800960] (-) TimerEvent: {}
+[37.901698] (-) TimerEvent: {}
+[38.002419] (-) TimerEvent: {}
+[38.103272] (-) TimerEvent: {}
+[38.204051] (-) TimerEvent: {}
+[38.304507] (-) TimerEvent: {}
+[38.405076] (-) TimerEvent: {}
+[38.505902] (-) TimerEvent: {}
+[38.606433] (-) TimerEvent: {}
+[38.707143] (-) TimerEvent: {}
+[38.807716] (-) TimerEvent: {}
+[38.908416] (-) TimerEvent: {}
+[39.009153] (-) TimerEvent: {}
+[39.109743] (-) TimerEvent: {}
+[39.210292] (-) TimerEvent: {}
+[39.311143] (-) TimerEvent: {}
+[39.411728] (-) TimerEvent: {}
+[39.512214] (-) TimerEvent: {}
+[39.613021] (-) TimerEvent: {}
+[39.713604] (-) TimerEvent: {}
+[39.814102] (-) TimerEvent: {}
+[39.914749] (-) TimerEvent: {}
+[40.015528] (-) TimerEvent: {}
+[40.116305] (-) TimerEvent: {}
+[40.216718] (-) TimerEvent: {}
+[40.317265] (-) TimerEvent: {}
+[40.417955] (-) TimerEvent: {}
+[40.518375] (-) TimerEvent: {}
+[40.619217] (-) TimerEvent: {}
+[40.720090] (-) TimerEvent: {}
+[40.820554] (-) TimerEvent: {}
+[40.921167] (-) TimerEvent: {}
+[41.021587] (-) TimerEvent: {}
+[41.122122] (-) TimerEvent: {}
+[41.222573] (-) TimerEvent: {}
+[41.323055] (-) TimerEvent: {}
+[41.423527] (-) TimerEvent: {}
+[41.524152] (-) TimerEvent: {}
+[41.625096] (-) TimerEvent: {}
+[41.725958] (-) TimerEvent: {}
+[41.826704] (-) TimerEvent: {}
+[41.927143] (-) TimerEvent: {}
+[42.027590] (-) TimerEvent: {}
+[42.128069] (-) TimerEvent: {}
+[42.228446] (-) TimerEvent: {}
+[42.328759] (-) TimerEvent: {}
+[42.429081] (-) TimerEvent: {}
+[42.529399] (-) TimerEvent: {}
+[42.629729] (-) TimerEvent: {}
+[42.730059] (-) TimerEvent: {}
+[42.830410] (-) TimerEvent: {}
+[42.885178] (explore_lite) StdoutLine: {'line': b'[100%] Built target explore\n'}
+[42.908095] (explore_lite) CommandEnded: {'returncode': 0}
+[42.908897] (explore_lite) JobProgress: {'identifier': 'explore_lite', 'progress': 'install'}
+[42.909280] (explore_lite) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/fyp/Desktop/swarm_repo/robot/ros2ws/build/explore_lite'], 'cwd': '/home/fyp/Desktop/swarm_repo/robot/ros2ws/build/explore_lite', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'fyp', 'SSH_CLIENT': '192.168.1.59 41366 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/fyp', 'OLDPWD': '/home/fyp', 'SSH_TTY': '/dev/pts/4', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'fyp', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'PATH': '/home/fyp/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/fyp/.local/bin:/home/fyp/.local/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/fyp/Desktop/swarm_repo/robot/ros2ws/build/explore_lite', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.59 41366 192.168.1.136 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/home/fyp/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[42.927365] (explore_lite) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[42.927650] (explore_lite) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/explore_lite/include/explore/\n'}
+[42.927809] (explore_lite) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/explore_lite/include/explore//costmap_tools.h\n'}
+[42.927929] (explore_lite) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/explore_lite/include/explore//costmap_client.h\n'}
+[42.928065] (explore_lite) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/explore_lite/include/explore//explore.h\n'}
+[42.928180] (explore_lite) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/explore_lite/include/explore//frontier_search.h\n'}
+[42.928332] (explore_lite) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/explore_lite/share/explore_lite/config\n'}
+[42.928510] (explore_lite) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/explore_lite/share/explore_lite/config/params.yaml\n'}
+[42.929446] (explore_lite) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/explore_lite/share/explore_lite/config/params_costmap.yaml\n'}
+[42.929965] (explore_lite) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/explore_lite/share/explore_lite/launch\n'}
+[42.930079] (explore_lite) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/explore_lite/share/explore_lite/launch/explore.launch.py\n'}
+[42.930458] (-) TimerEvent: {}
+[42.930789] (explore_lite) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/explore_lite/lib/explore_lite/explore\n'}
+[42.953421] (explore_lite) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/fyp/Desktop/swarm_repo/robot/ros2ws/install/explore_lite/lib/explore_lite/explore" to ""\n'}
+[42.953712] (explore_lite) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/explore_lite/share/ament_index/resource_index/package_run_dependencies/explore_lite\n'}
+[42.953952] (explore_lite) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/explore_lite/share/ament_index/resource_index/parent_prefix_path/explore_lite\n'}
+[42.954203] (explore_lite) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/explore_lite/share/explore_lite/environment/ament_prefix_path.sh\n'}
+[42.954376] (explore_lite) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/explore_lite/share/explore_lite/environment/ament_prefix_path.dsv\n'}
+[42.954551] (explore_lite) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/explore_lite/share/explore_lite/environment/path.sh\n'}
+[42.954725] (explore_lite) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/explore_lite/share/explore_lite/environment/path.dsv\n'}
+[42.954886] (explore_lite) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/explore_lite/share/explore_lite/local_setup.bash\n'}
+[42.955054] (explore_lite) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/explore_lite/share/explore_lite/local_setup.sh\n'}
+[42.955223] (explore_lite) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/explore_lite/share/explore_lite/local_setup.zsh\n'}
+[42.955387] (explore_lite) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/explore_lite/share/explore_lite/local_setup.dsv\n'}
+[42.955555] (explore_lite) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/explore_lite/share/explore_lite/package.dsv\n'}
+[42.955782] (explore_lite) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/explore_lite/share/ament_index/resource_index/packages/explore_lite\n'}
+[42.955989] (explore_lite) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/explore_lite/share/explore_lite/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[42.956154] (explore_lite) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/explore_lite/share/explore_lite/cmake/explore_liteConfig.cmake\n'}
+[42.956286] (explore_lite) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/explore_lite/share/explore_lite/cmake/explore_liteConfig-version.cmake\n'}
+[42.956445] (explore_lite) StdoutLine: {'line': b'-- Installing: /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/explore_lite/share/explore_lite/package.xml\n'}
+[42.959340] (explore_lite) CommandEnded: {'returncode': 0}
+[42.977730] (explore_lite) JobEnded: {'identifier': 'explore_lite', 'rc': 0}
+[42.978616] (-) EventReactorShutdown: {}

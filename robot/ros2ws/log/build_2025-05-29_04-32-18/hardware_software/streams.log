@@ -1,0 +1,56 @@
+[2.749s] Invoking command in '/home/fyp/Desktop/swarm_repo/robot/ros2ws/src/hardware_software': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/fyp/Desktop/swarm_repo/robot/ros2ws/build/hardware_software/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/hardware_software build --build-base /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/hardware_software/build install --record /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/hardware_software/install.log --single-version-externally-managed install_data
+[3.183s] running egg_info
+[3.185s] creating ../../build/hardware_software/hardware_software.egg-info
+[3.218s] writing ../../build/hardware_software/hardware_software.egg-info/PKG-INFO
+[3.219s] writing dependency_links to ../../build/hardware_software/hardware_software.egg-info/dependency_links.txt
+[3.219s] writing entry points to ../../build/hardware_software/hardware_software.egg-info/entry_points.txt
+[3.220s] writing requirements to ../../build/hardware_software/hardware_software.egg-info/requires.txt
+[3.220s] writing top-level names to ../../build/hardware_software/hardware_software.egg-info/top_level.txt
+[3.221s] writing manifest file '../../build/hardware_software/hardware_software.egg-info/SOURCES.txt'
+[3.287s] reading manifest file '../../build/hardware_software/hardware_software.egg-info/SOURCES.txt'
+[3.288s] writing manifest file '../../build/hardware_software/hardware_software.egg-info/SOURCES.txt'
+[3.288s] running build
+[3.289s] running build_py
+[3.289s] creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/hardware_software/build
+[3.289s] creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/hardware_software/build/lib
+[3.289s] creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/hardware_software/build/lib/hardware_software
+[3.289s] copying hardware_software/__init__.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/hardware_software/build/lib/hardware_software
+[3.289s] copying hardware_software/mqtt_encoder.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/hardware_software/build/lib/hardware_software
+[3.294s] running install
+[3.302s] running install_lib
+[3.332s] creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/lib/python3.12/site-packages/hardware_software
+[3.332s] copying /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/hardware_software/build/lib/hardware_software/__init__.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/lib/python3.12/site-packages/hardware_software
+[3.333s] copying /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/hardware_software/build/lib/hardware_software/mqtt_encoder.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/lib/python3.12/site-packages/hardware_software
+[3.334s] byte-compiling /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/lib/python3.12/site-packages/hardware_software/__init__.py to __init__.cpython-312.pyc
+[3.336s] byte-compiling /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/lib/python3.12/site-packages/hardware_software/mqtt_encoder.py to mqtt_encoder.cpython-312.pyc
+[3.336s] running install_data
+[3.337s] creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/ament_index
+[3.337s] creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/ament_index/resource_index
+[3.337s] creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/ament_index/resource_index/packages
+[3.339s] copying resource/hardware_software -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/ament_index/resource_index/packages
+[3.340s] copying package.xml -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software
+[3.340s] creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/launch
+[3.340s] copying launch/tf.launch.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/launch/
+[3.340s] copying launch/hardware_setup.launch.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/launch/
+[3.341s] copying launch/navigation_launch.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/launch/
+[3.342s] copying launch/hardware.launch.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/launch/
+[3.342s] copying launch/robot_nav.launch.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/launch/
+[3.343s] copying launch/robot_explore.launch.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/launch/
+[3.343s] copying launch/slam.launch.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/launch/
+[3.344s] copying launch/rviz.launch.py -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/launch/
+[3.345s] creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/urdf
+[3.345s] copying urdf/turtlebot3_burger.urdf -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/urdf/
+[3.346s] copying urdf/diffbot_description.urdf.xacro -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/urdf/
+[3.346s] copying urdf/turtlebot3_waffle.urdf -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/urdf/
+[3.349s] creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/params
+[3.350s] copying params/explore_params.yaml -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/params/
+[3.352s] copying params/slam.yaml -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/params/
+[3.352s] copying params/nav2_params.yaml -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/params/
+[3.353s] creating /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/rviz
+[3.354s] copying rviz/basic.rviz -> /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/share/hardware_software/rviz/
+[3.355s] running install_egg_info
+[3.409s] Copying ../../build/hardware_software/hardware_software.egg-info to /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/lib/python3.12/site-packages/hardware_software-0.0.0-py3.12.egg-info
+[3.409s] running install_scripts
+[3.637s] Installing ros2_mqtt_encoder script to /home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/lib/hardware_software
+[3.638s] writing list of installed files to '/home/fyp/Desktop/swarm_repo/robot/ros2ws/build/hardware_software/install.log'
+[3.771s] Invoked command in '/home/fyp/Desktop/swarm_repo/robot/ros2ws/src/hardware_software' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/fyp/Desktop/swarm_repo/robot/ros2ws/build/hardware_software/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fyp/Desktop/swarm_repo/robot/ros2ws/install/hardware_software/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/hardware_software build --build-base /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/hardware_software/build install --record /home/fyp/Desktop/swarm_repo/robot/ros2ws/build/hardware_software/install.log --single-version-externally-managed install_data

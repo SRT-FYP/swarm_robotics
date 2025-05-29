@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/explore_lite")
+  set(CMAKE_INSTALL_PREFIX "/home/fyp/Desktop/swarm_repo/robot/ros2ws/install/explore_lite")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

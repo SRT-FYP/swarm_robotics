@@ -10,6 +10,7 @@ setup.py
 ../../build/hardware_software/hardware_software.egg-info/zip-safe
 hardware_software/__init__.py
 hardware_software/mqtt_encoder.py
+hardware_software/mqtt_subscriber.py
 launch/hardware.launch.py
 launch/hardware_setup.launch.py
 launch/navigation_launch.py
