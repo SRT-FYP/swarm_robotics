@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/opt/ros/jazzy/src/gtest_vendor")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/fyp/Desktop/robot/ros2ws/build/explore_lite")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/build/explore_lite")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

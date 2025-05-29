@@ -1,0 +1,37 @@
+[2.696s] Invoking command in '/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/src/imu_reader': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/build/imu_reader/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/imu_reader/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/imu_reader build --build-base /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/build/imu_reader/build install --record /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/build/imu_reader/install.log --single-version-externally-managed install_data
+[3.130s] running egg_info
+[3.130s] creating ../../build/imu_reader/imu_reader.egg-info
+[3.155s] writing ../../build/imu_reader/imu_reader.egg-info/PKG-INFO
+[3.156s] writing dependency_links to ../../build/imu_reader/imu_reader.egg-info/dependency_links.txt
+[3.157s] writing entry points to ../../build/imu_reader/imu_reader.egg-info/entry_points.txt
+[3.157s] writing requirements to ../../build/imu_reader/imu_reader.egg-info/requires.txt
+[3.158s] writing top-level names to ../../build/imu_reader/imu_reader.egg-info/top_level.txt
+[3.158s] writing manifest file '../../build/imu_reader/imu_reader.egg-info/SOURCES.txt'
+[3.216s] reading manifest file '../../build/imu_reader/imu_reader.egg-info/SOURCES.txt'
+[3.217s] writing manifest file '../../build/imu_reader/imu_reader.egg-info/SOURCES.txt'
+[3.218s] running build
+[3.219s] running build_py
+[3.219s] creating /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/build/imu_reader/build
+[3.220s] creating /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/build/imu_reader/build/lib
+[3.220s] creating /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/build/imu_reader/build/lib/imu_reader
+[3.221s] copying imu_reader/imu_reader_node.py -> /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/build/imu_reader/build/lib/imu_reader
+[3.222s] copying imu_reader/__init__.py -> /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/build/imu_reader/build/lib/imu_reader
+[3.223s] running install
+[3.235s] running install_lib
+[3.272s] creating /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/imu_reader/lib/python3.12/site-packages/imu_reader
+[3.272s] copying /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/build/imu_reader/build/lib/imu_reader/imu_reader_node.py -> /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/imu_reader/lib/python3.12/site-packages/imu_reader
+[3.272s] copying /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/build/imu_reader/build/lib/imu_reader/__init__.py -> /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/imu_reader/lib/python3.12/site-packages/imu_reader
+[3.272s] byte-compiling /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/imu_reader/lib/python3.12/site-packages/imu_reader/imu_reader_node.py to imu_reader_node.cpython-312.pyc
+[3.276s] byte-compiling /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/imu_reader/lib/python3.12/site-packages/imu_reader/__init__.py to __init__.cpython-312.pyc
+[3.276s] running install_data
+[3.276s] creating /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/imu_reader/share/ament_index
+[3.276s] creating /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/imu_reader/share/ament_index/resource_index
+[3.276s] creating /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/imu_reader/share/ament_index/resource_index/packages
+[3.276s] copying resource/imu_reader -> /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/imu_reader/share/ament_index/resource_index/packages
+[3.276s] copying package.xml -> /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/imu_reader/share/imu_reader
+[3.277s] running install_egg_info
+[3.304s] Copying ../../build/imu_reader/imu_reader.egg-info to /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/imu_reader/lib/python3.12/site-packages/imu_reader-0.0.0-py3.12.egg-info
+[3.305s] running install_scripts
+[3.511s] Installing imu_reader_node script to /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/imu_reader/lib/imu_reader
+[3.512s] writing list of installed files to '/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/build/imu_reader/install.log'
+[3.686s] Invoked command in '/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/src/imu_reader' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/build/imu_reader/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/imu_reader/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/imu_reader build --build-base /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/build/imu_reader/build install --record /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/build/imu_reader/install.log --single-version-externally-managed install_data

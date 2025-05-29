@@ -1,9 +1,0 @@
-<library path="my_robot_control">
-  <class name="my_robot_control/DiffBotSystem"
-         type="my_robot_control::DiffBotSystem"
-         base_class_type="hardware_interface::SystemInterface">
-    <description>
-      Hardware interface for differential drive robot with real motors
-    </description>
-  </class>
-</library>
