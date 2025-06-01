@@ -1,0 +1,24 @@
+running egg_info
+writing ../../../../build/hardware_software/hardware_software.egg-info/PKG-INFO
+writing dependency_links to ../../../../build/hardware_software/hardware_software.egg-info/dependency_links.txt
+writing entry points to ../../../../build/hardware_software/hardware_software.egg-info/entry_points.txt
+writing requirements to ../../../../build/hardware_software/hardware_software.egg-info/requires.txt
+writing top-level names to ../../../../build/hardware_software/hardware_software.egg-info/top_level.txt
+reading manifest file '../../../../build/hardware_software/hardware_software.egg-info/SOURCES.txt'
+writing manifest file '../../../../build/hardware_software/hardware_software.egg-info/SOURCES.txt'
+running build
+running build_py
+copying hardware_software/map_to_json.py -> /home/fyp3/Desktop/ros2_swarm_mapping/build/hardware_software/build/lib/hardware_software
+running install
+running install_lib
+copying /home/fyp3/Desktop/ros2_swarm_mapping/build/hardware_software/build/lib/hardware_software/map_to_json.py -> /home/fyp3/Desktop/ros2_swarm_mapping/install/hardware_software/lib/python3.12/site-packages/hardware_software
+byte-compiling /home/fyp3/Desktop/ros2_swarm_mapping/install/hardware_software/lib/python3.12/site-packages/hardware_software/map_to_json.py to map_to_json.cpython-312.pyc
+running install_data
+running install_egg_info
+removing '/home/fyp3/Desktop/ros2_swarm_mapping/install/hardware_software/lib/python3.12/site-packages/hardware_software-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../../../build/hardware_software/hardware_software.egg-info to /home/fyp3/Desktop/ros2_swarm_mapping/install/hardware_software/lib/python3.12/site-packages/hardware_software-0.0.0-py3.12.egg-info
+running install_scripts
+Installing map_to_json script to /home/fyp3/Desktop/ros2_swarm_mapping/install/hardware_software/lib/hardware_software
+Installing ros2_mqtt_encoder script to /home/fyp3/Desktop/ros2_swarm_mapping/install/hardware_software/lib/hardware_software
+Installing ros2_mqtt_subscriber script to /home/fyp3/Desktop/ros2_swarm_mapping/install/hardware_software/lib/hardware_software
+writing list of installed files to '/home/fyp3/Desktop/ros2_swarm_mapping/build/hardware_software/install.log'

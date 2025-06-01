@@ -11,6 +11,7 @@ setup.py
 motor_controller/__init__.py
 motor_controller/motor_driver.py
 motor_controller/wheel_encoder.py
+motor_controller/wheel_encoder_for_fusion.py
 resource/motor_controller
 test/test_copyright.py
 test/test_flake8.py

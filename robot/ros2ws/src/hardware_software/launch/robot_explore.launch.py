@@ -16,7 +16,7 @@ def generate_launch_description():
     hardware_software_pkg = get_package_share_directory('hardware_software')
     nav2_params= os.path.join(hardware_software_pkg, 'params', 'nav2_params.yaml')
 
-    min_frontier_size = 0.2
+    min_frontier_size = 0.1
 
     slam_toolbox_pkg = get_package_share_directory('slam_toolbox')
     slam_params_file = os.path.join(hardware_software_pkg, 'params', 'slam.yaml')

@@ -1,0 +1,17 @@
+gmake[2]: *** No rule to make target '/home/fyp3/pigpio-master/libpigpio.so', needed by 'libmy_robot_control.so'.  Stop.
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/src/my_robot_control/src/motor_driver.cpp:2[m[K:
+[01m[K/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/src/my_robot_control/include/my_robot_control/motor_driver.hpp:4:10:[m[K [01;31m[Kfatal error: [m[Kpigpio.h: No such file or directory
+    4 | #include [01;31m[K<pigpio.h>[m[K
+      |          [01;31m[K^~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/my_robot_control.dir/build.make:90: CMakeFiles/my_robot_control.dir/src/motor_driver.cpp.o] Error 1
+In file included from [01m[K/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/src/my_robot_control/include/my_robot_control/diffbot_system.hpp:33[m[K,
+                 from [01m[K/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/src/my_robot_control/src/diffbot_system.cpp:1[m[K:
+[01m[K/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/src/my_robot_control/include/my_robot_control/motor_driver.hpp:4:10:[m[K [01;31m[Kfatal error: [m[Kpigpio.h: No such file or directory
+    4 | #include [01;31m[K<pigpio.h>[m[K
+      |          [01;31m[K^~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/my_robot_control.dir/build.make:76: CMakeFiles/my_robot_control.dir/src/diffbot_system.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/my_robot_control.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

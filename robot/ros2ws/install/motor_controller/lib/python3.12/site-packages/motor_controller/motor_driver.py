@@ -34,8 +34,8 @@ class MotorDriver(Node):
             10)
         self.subscription  # prevent unused variable warning
         
-        self.publisher_left_backward_flag = self.create_publisher(Bool, '/motor_left_backward_flag', 10)
-        self.publisher_right_backward_flag = self.create_publisher(Bool, '/motor_right_backward_flag', 10)
+        self.publisher_left_backward_flag = self.create_publisher(Bool, 'motor_left_backward_flag', 10)
+        self.publisher_right_backward_flag = self.create_publisher(Bool, 'motor_right_backward_flag', 10)
 
         self.get_logger().info('Motor driver node initialized using GPIOZero')
 

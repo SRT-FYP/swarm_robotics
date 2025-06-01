@@ -1,0 +1,21 @@
+[0.023s] Invoking command in '/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/build/my_robot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/motor_controller:/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/imu_reader:/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/hardware_software:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/build/my_robot_control -- -j4 -l4
+[0.145s] gmake[2]: *** No rule to make target '/home/fyp3/pigpio-master/libpigpio.so', needed by 'libmy_robot_control.so'.  Stop.
+[0.149s] gmake[2]: *** Waiting for unfinished jobs....
+[0.164s] [ 33%] [32mBuilding CXX object CMakeFiles/my_robot_control.dir/src/motor_driver.cpp.o[0m
+[0.171s] [ 66%] [32mBuilding CXX object CMakeFiles/my_robot_control.dir/src/diffbot_system.cpp.o[0m
+[0.735s] In file included from [01m[K/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/src/my_robot_control/src/motor_driver.cpp:2[m[K:
+[0.735s] [01m[K/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/src/my_robot_control/include/my_robot_control/motor_driver.hpp:4:10:[m[K [01;31m[Kfatal error: [m[Kpigpio.h: No such file or directory
+[0.735s]     4 | #include [01;31m[K<pigpio.h>[m[K
+[0.735s]       |          [01;31m[K^~~~~~~~~~[m[K
+[0.736s] compilation terminated.
+[0.753s] gmake[2]: *** [CMakeFiles/my_robot_control.dir/build.make:90: CMakeFiles/my_robot_control.dir/src/motor_driver.cpp.o] Error 1
+[1.981s] In file included from [01m[K/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/src/my_robot_control/include/my_robot_control/diffbot_system.hpp:33[m[K,
+[1.982s]                  from [01m[K/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/src/my_robot_control/src/diffbot_system.cpp:1[m[K:
+[1.982s] [01m[K/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/src/my_robot_control/include/my_robot_control/motor_driver.hpp:4:10:[m[K [01;31m[Kfatal error: [m[Kpigpio.h: No such file or directory
+[1.982s]     4 | #include [01;31m[K<pigpio.h>[m[K
+[1.982s]       |          [01;31m[K^~~~~~~~~~[m[K
+[1.982s] compilation terminated.
+[1.993s] gmake[2]: *** [CMakeFiles/my_robot_control.dir/build.make:76: CMakeFiles/my_robot_control.dir/src/diffbot_system.cpp.o] Error 1
+[1.995s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/my_robot_control.dir/all] Error 2
+[1.996s] gmake: *** [Makefile:146: all] Error 2
+[2.001s] Invoked command in '/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/build/my_robot_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/motor_controller:/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/imu_reader:/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/hardware_software:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/build/my_robot_control -- -j4 -l4

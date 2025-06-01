@@ -13,8 +13,8 @@ class Mqtt2RosBridge(Node):
         self.mqtt_client = mqtt.Client()
         self.mqtt_client.on_message = self.on_mqtt_message
         # self.mqtt_client.connect("192.168.1.59", 1883, 60)  # Use your broker IP
-        # self.mqtt_client.connect("192.168.43.204", 1883, 60)
-        self.mqtt_client.connect("192.168.43.56", 1883, 60)
+        self.mqtt_client.connect("192.168.43.204", 1883, 60)
+        # self.mqtt_client.connect("192.168.43.56", 1883, 60)
         self.mqtt_client.subscribe("map")
         self.mqtt_client.loop_start()
 

@@ -22,6 +22,7 @@ setup(
         'console_scripts': [
             'motor_driver = motor_controller.motor_driver:main',
             'wheel_encoder = motor_controller.wheel_encoder:main',
+            'wheel_encoder_for_fusion = motor_controller.wheel_encoder_for_fusion:main',
         ],
     },
 )

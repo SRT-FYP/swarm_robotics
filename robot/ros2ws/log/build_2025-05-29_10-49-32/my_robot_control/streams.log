@@ -1,0 +1,64 @@
+[0.026s] Invoking command in '/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/build/my_robot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/motor_controller:/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/imu_reader:/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/hardware_software:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/src/my_robot_control -DCMAKE_INSTALL_PREFIX=/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/my_robot_control
+[0.164s] -- The C compiler identification is GNU 13.3.0
+[0.306s] -- The CXX compiler identification is GNU 13.3.0
+[0.339s] -- Detecting C compiler ABI info
+[0.576s] -- Detecting C compiler ABI info - done
+[0.593s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.595s] -- Detecting C compile features
+[0.595s] -- Detecting C compile features - done
+[0.623s] -- Detecting CXX compiler ABI info
+[0.844s] -- Detecting CXX compiler ABI info - done
+[0.862s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.862s] -- Detecting CXX compile features
+[0.864s] -- Detecting CXX compile features - done
+[0.867s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.136s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.355s] -- Found rclcpp: 28.1.9 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.416s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.436s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.464s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.493s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.617s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.620s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.763s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.797s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.832s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.949s] -- Found rplidar_ros: 2.1.0 (/opt/ros/jazzy/share/rplidar_ros/cmake)
+[2.171s] -- Found ros2_control: 4.29.0 (/opt/ros/jazzy/share/ros2_control/cmake)
+[2.178s] -- Found hardware_interface: 4.29.0 (/opt/ros/jazzy/share/hardware_interface/cmake)
+[3.249s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[3.572s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.573s] -- Configured cppcheck include dirs: /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/src/my_robot_control/include
+[3.573s] -- Configured cppcheck exclude dirs and/or files: 
+[3.575s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.575s] -- Configured 'flake8' exclude dirs and/or files: 
+[3.578s] -- Added test 'lint_cmake' to check CMake code style
+[3.582s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.585s] -- Added test 'uncrustify' to check C / C++ code style
+[3.586s] -- Configured uncrustify additional arguments: 
+[3.586s] -- Added test 'xmllint' to check XML markup files
+[3.609s] -- Configuring done (3.6s)
+[3.766s] -- Generating done (0.1s)
+[3.782s] -- Build files have been written to: /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/build/my_robot_control
+[3.814s] Invoked command in '/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/build/my_robot_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/motor_controller:/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/imu_reader:/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/hardware_software:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/src/my_robot_control -DCMAKE_INSTALL_PREFIX=/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/my_robot_control
+[3.815s] Invoking command in '/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/build/my_robot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/motor_controller:/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/imu_reader:/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/hardware_software:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/build/my_robot_control -- -j4 -l4
+[3.932s] gmake[2]: *** No rule to make target '/home/fyp3/pigpio-master/libpigpio.so', needed by 'libmy_robot_control.so'.  Stop.
+[3.932s] gmake[2]: *** Waiting for unfinished jobs....
+[3.965s] [ 33%] [32mBuilding CXX object CMakeFiles/my_robot_control.dir/src/diffbot_system.cpp.o[0m
+[3.969s] [ 66%] [32mBuilding CXX object CMakeFiles/my_robot_control.dir/src/motor_driver.cpp.o[0m
+[4.035s] In file included from [01m[K/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/src/my_robot_control/src/motor_driver.cpp:2[m[K:
+[4.035s] [01m[K/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/src/my_robot_control/include/my_robot_control/motor_driver.hpp:4:10:[m[K [01;31m[Kfatal error: [m[Kpigpio.h: No such file or directory
+[4.036s]     4 | #include [01;31m[K<pigpio.h>[m[K
+[4.036s]       |          [01;31m[K^~~~~~~~~~[m[K
+[4.040s] compilation terminated.
+[4.045s] gmake[2]: *** [CMakeFiles/my_robot_control.dir/build.make:90: CMakeFiles/my_robot_control.dir/src/motor_driver.cpp.o] Error 1
+[5.217s] In file included from [01m[K/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/src/my_robot_control/include/my_robot_control/diffbot_system.hpp:33[m[K,
+[5.217s]                  from [01m[K/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/src/my_robot_control/src/diffbot_system.cpp:1[m[K:
+[5.217s] [01m[K/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/src/my_robot_control/include/my_robot_control/motor_driver.hpp:4:10:[m[K [01;31m[Kfatal error: [m[Kpigpio.h: No such file or directory
+[5.217s]     4 | #include [01;31m[K<pigpio.h>[m[K
+[5.217s]       |          [01;31m[K^~~~~~~~~~[m[K
+[5.218s] compilation terminated.
+[5.233s] gmake[2]: *** [CMakeFiles/my_robot_control.dir/build.make:76: CMakeFiles/my_robot_control.dir/src/diffbot_system.cpp.o] Error 1
+[5.233s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/my_robot_control.dir/all] Error 2
+[5.233s] gmake: *** [Makefile:146: all] Error 2
+[5.233s] Invoked command in '/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/build/my_robot_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/motor_controller:/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/imu_reader:/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/hardware_software:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/build/my_robot_control -- -j4 -l4

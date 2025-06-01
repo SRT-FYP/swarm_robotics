@@ -9,6 +9,7 @@ setup.py
 ../../build/hardware_software/hardware_software.egg-info/top_level.txt
 ../../build/hardware_software/hardware_software.egg-info/zip-safe
 hardware_software/__init__.py
+hardware_software/map_to_json.py
 hardware_software/mqtt_encoder.py
 hardware_software/mqtt_subscriber.py
 launch/hardware.launch.py
@@ -19,6 +20,7 @@ launch/robot_nav.launch.py
 launch/rviz.launch.py
 launch/slam.launch.py
 launch/tf.launch.py
+params/ekf_filter.yaml
 params/explore_params.yaml
 params/nav2_params.yaml
 params/slam.yaml

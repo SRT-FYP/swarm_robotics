@@ -1,6 +1,7 @@
 import time
 from mpu9250_jmdev.registers import *
 from mpu9250_jmdev.mpu_9250 import MPU9250
+import numpy as np
 
 def calibrate_gyro(mpu, num_samples=1000):
     print("Calibrating gyroscope...")
@@ -63,6 +64,7 @@ mpu = MPU9250(
 # Configure the MPU9250
 # mpu.configure()
 mpu.configureMPU6500(mpu.gfs,mpu.afs)
+gx_offset, gy_offset, gz_offset = calibrate_gyro(mpu)
 
 while True:
     # Read the accelerometer, gyroscope, and magnetometer values
@@ -70,10 +72,11 @@ while True:
     gyro_data = mpu.readGyroscopeMaster()
     # mag_data = mpu.readMagnetometerMaster()
 
+
     # Apply gyroscopr calibration offsets
-    # gyro_data[0] -= gx_offset
-    # gyro_data[1] -= gy_offset
-    # gyro_data[2] -= gz_offset
+    gyro_data[0] -= gx_offset
+    gyro_data[1] -= gy_offset
+    gyro_data[2] -= gz_offset
 
     # Apply the accelerometer calibration offsets
     #accel_data[0] -= ax_offset

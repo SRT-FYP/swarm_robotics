@@ -1,0 +1,33 @@
+[ 20%] Built target gtest_main
+[ 40%] Built target gtest
+[ 60%] Built target test_explore
+[100%] Built target explore
+-- Install configuration: ""
+-- Installing: /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/explore_lite/include/explore/
+-- Installing: /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/explore_lite/include/explore//costmap_tools.h
+-- Installing: /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/explore_lite/include/explore//costmap_client.h
+-- Installing: /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/explore_lite/include/explore//explore.h
+-- Installing: /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/explore_lite/include/explore//frontier_search.h
+-- Installing: /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/explore_lite/share/explore_lite/config
+-- Installing: /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/explore_lite/share/explore_lite/config/params.yaml
+-- Installing: /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/explore_lite/share/explore_lite/config/params_costmap.yaml
+-- Installing: /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/explore_lite/share/explore_lite/launch
+-- Installing: /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/explore_lite/share/explore_lite/launch/explore.launch.py
+-- Installing: /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/explore_lite/lib/explore_lite/explore
+-- Set non-toolchain portion of runtime path of "/home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/explore_lite/lib/explore_lite/explore" to ""
+-- Installing: /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/explore_lite/share/ament_index/resource_index/package_run_dependencies/explore_lite
+-- Installing: /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/explore_lite/share/ament_index/resource_index/parent_prefix_path/explore_lite
+-- Installing: /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/explore_lite/share/explore_lite/environment/ament_prefix_path.sh
+-- Installing: /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/explore_lite/share/explore_lite/environment/ament_prefix_path.dsv
+-- Installing: /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/explore_lite/share/explore_lite/environment/path.sh
+-- Installing: /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/explore_lite/share/explore_lite/environment/path.dsv
+-- Installing: /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/explore_lite/share/explore_lite/local_setup.bash
+-- Installing: /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/explore_lite/share/explore_lite/local_setup.sh
+-- Installing: /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/explore_lite/share/explore_lite/local_setup.zsh
+-- Installing: /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/explore_lite/share/explore_lite/local_setup.dsv
+-- Installing: /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/explore_lite/share/explore_lite/package.dsv
+-- Installing: /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/explore_lite/share/ament_index/resource_index/packages/explore_lite
+-- Installing: /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/explore_lite/share/explore_lite/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/explore_lite/share/explore_lite/cmake/explore_liteConfig.cmake
+-- Installing: /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/explore_lite/share/explore_lite/cmake/explore_liteConfig-version.cmake
+-- Installing: /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/explore_lite/share/explore_lite/package.xml

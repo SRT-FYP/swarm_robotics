@@ -41,8 +41,8 @@ class WheelEncoder(Node):
         self.odom_pub = self.create_publisher(Odometry, 'odom', 10)
         # self.tick_pub = self.create_publisher(String, 'encoder_ticks', 10)
 
-        self.subscribe_motor_left_backward_flag = self.create_subscription(Bool, '/motor_left_backward_flag', self.motor_left_backward_callback, 10)
-        self.subscribe_motor_right_backward_flag = self.create_subscription(Bool, '/motor_right_backward_flag', self.motor_right_backward_callback, 10)
+        self.subscribe_motor_left_backward_flag = self.create_subscription(Bool, 'motor_left_backward_flag', self.motor_left_backward_callback, 10)
+        self.subscribe_motor_right_backward_flag = self.create_subscription(Bool, 'motor_right_backward_flag', self.motor_right_backward_callback, 10)
 
         self.timer = self.create_timer(0.01, self.publish_odometry)  # 0.01 seconds = 10 ms
 

@@ -1,0 +1,33 @@
+-- Current platform: Linux
+-- Could NOT find SWIG (missing: SWIG_EXECUTABLE SWIG_DIR) 
+-- 
+-- +===========================================================================+
+-- |         Resulting configuration for                             |
+-- +===========================================================================+
+--  _________________________ PLATFORM _____________________________
+--  Host                        : Linux6.8.0-1028-raspiaarch64
+--  Is the system big endian?   :  No 
+--  Word size (32/64 bit)       : 64
+--  CMake version               : 3.28.3
+--  CMake generator             : Unix Makefiles
+--  CMake build tool            : /usr/bin/gmake
+--  Compiler                    : GNU
+--  Configuration               : 
+-- 
+--  __________________________ OPTIONS _____________________________
+--  Build YDLidar-SDK as a shared library?　　 :  No 
+--  Build Examples?　　　　　　　　　　　　　　 : Yes 
+--  Build C Sharp API?　　　　　　　　　　　　 :  No 
+--  Build TEST?  			　　　 :  No 
+-- 
+--  _________________________ INSTALL _____________________
+--  Install prefix                    : /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/install/ydlidar_sdk
+-- 
+--  _______________________ WRAPPERS/BINDINGS ______________________
+--  Python bindings (pyydlidar)   :  No 
+--   - dep: Swig found?       :  No [Version: ]
+--   - dep: PythonLibs found?  : Yes [Version: 3.12.3]
+-- 
+-- Configuring done (0.1s)
+-- Generating done (0.2s)
+-- Build files have been written to: /home/fyp3/Desktop/ros2_swarm_mapping/robot/ros2ws/src/YDLidar-SDK

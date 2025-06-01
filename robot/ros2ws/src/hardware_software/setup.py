@@ -31,7 +31,8 @@ setup(
     entry_points={
         'console_scripts': [
             'ros2_mqtt_encoder = hardware_software.mqtt_encoder:main',
-            'ros2_mqtt_subscriber = hardware_software.mqtt_subscriber:main'
+            'ros2_mqtt_subscriber = hardware_software.mqtt_subscriber:main',
+            'map_to_json = hardware_software.map_to_json:main',
         ],
     },
 )
