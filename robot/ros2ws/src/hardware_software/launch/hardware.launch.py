@@ -2,19 +2,38 @@ import os
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch_ros.actions import Node
-from launch.actions import IncludeLaunchDescription
+from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument
+from launch.substitutions import LaunchConfiguration, PythonExpression
+from launch.conditions import IfCondition
 from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch.actions import GroupAction
+
 
 def generate_launch_description():
 
     yd_lidar_pkg = get_package_share_directory('ydlidar_ros2_driver')
     
+    declare_namespace_argument = DeclareLaunchArgument(
+        "namespace",
+        default_value="",
+        description="Namespace for robot",
+    )
+    declare_lidar_type_argument = DeclareLaunchArgument(
+        "lidar_type",
+        default_value="rplidar",
+        description="Type of LIDAR to use (ydlidar or rplidar)",
+    )
+
+    namespace = LaunchConfiguration("namespace")
+    lidar_type = LaunchConfiguration("lidar_type")
+
     motor_control=Node(
         package='motor_controller',
         executable='motor_driver',
         name='motor_driver',
         output='screen',
         parameters=[{'use_sim_time': False}],
+        namespace=namespace,
     )
     wheel_encoder=Node(
         package='motor_controller',
@@ -23,22 +42,32 @@ def generate_launch_description():
         name='wheel_encoder',
         output='screen',
         parameters=[{'use_sim_time': False}],
+        namespace=namespace,
+        remappings=[('/tf', 'tf')]
     )
     ydlidar=IncludeLaunchDescription(
                 PythonLaunchDescriptionSource(os.path.join(yd_lidar_pkg, 'launch', 'ydlidar_launch.py')),
+                condition=IfCondition(PythonExpression(['"', lidar_type, '" == "ydlidar"']))
             )
 
-    # rplidar=Node(
-    #         package='rplidar_ros',
-    #         executable='rplidar_composition',
-    #         output='screen',
-    #         parameters=[{
-    #             'serial_port': '/dev/ttyUSB0',
-    #             'frame_id': 'base_scan',
-    #             'angle_compensate': True,
-    #             'scan_mode': 'Standard'
-    #         }]
-    #     )
+    rplidar = GroupAction(
+        actions=[
+            Node(
+                package='rplidar_ros',
+                executable='rplidar_composition',
+                name='rplidar_composition',
+                output='screen',
+                parameters=[{
+                    'serial_port': '/dev/ttyUSB0',
+                    'frame_id': 'base_scan',
+                    'angle_compensate': True,
+                    'scan_mode': 'Standard'
+                }],
+                namespace=namespace,
+            )
+        ],
+        condition=IfCondition(PythonExpression(['"', lidar_type, '" == "rplidar"']))
+    )
 
     imu = Node(
         package='imu_reader',
@@ -46,13 +75,16 @@ def generate_launch_description():
         name='imu_reader',
         output='screen',
         parameters=[{'use_sim_time': False}],
+        namespace=namespace,
     )
 
     ld = LaunchDescription()
+    ld.add_action(declare_namespace_argument)
+    ld.add_action(declare_lidar_type_argument)
     ld.add_action(motor_control)
     ld.add_action(wheel_encoder)
     ld.add_action(ydlidar)
-    # ld.add_action(rplidar)
+    ld.add_action(rplidar)
     # ld.add_action(imu)
     return ld
 

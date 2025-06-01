@@ -16,6 +16,7 @@ launch/hardware.launch.py
 launch/hardware_setup.launch.py
 launch/navigation_launch.py
 launch/robot_explore.launch.py
+launch/robot_in_swarm_explore.launch.py
 launch/robot_nav.launch.py
 launch/rviz.launch.py
 launch/slam.launch.py

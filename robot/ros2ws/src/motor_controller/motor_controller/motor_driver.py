@@ -29,7 +29,7 @@ class MotorDriver(Node):
         # Subscribe to cmd_vel topic
         self.subscription = self.create_subscription(
             Twist,
-            '/cmd_vel',
+            'cmd_vel',
             self.cmd_vel_callback,
             10)
         self.subscription  # prevent unused variable warning
