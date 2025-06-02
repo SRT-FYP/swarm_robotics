@@ -9,7 +9,7 @@ from launch.substitutions import LaunchConfiguration, PythonExpression
 
 def generate_launch_description():
     hardware_software_pkg = get_package_share_directory('hardware_software')
-    nav2_params= os.path.join(hardware_software_pkg, 'params', 'nav2_params.yaml')
+    # nav2_params= os.path.join(hardware_software_pkg, 'params', 'nav2_params.yaml')
 
     declare_namespace_argument = DeclareLaunchArgument(
         "namespace",
@@ -25,6 +25,8 @@ def generate_launch_description():
     namespace = LaunchConfiguration("namespace")
     lidar_type = LaunchConfiguration("lidar_type")
 
+    nav2_params= os.path.join(hardware_software_pkg, 'params', 'temp_nav2_params_namespaced.yaml')
+
     nav2_launch=GroupAction(
         [
             PushRosNamespace(namespace=namespace),
@@ -38,8 +40,6 @@ def generate_launch_description():
             SetRemap(src='/cmd_vel', dst='cmd_vel'),
             SetRemap(src='/global_plan', dst='global_plan'),
             SetRemap(src='/local_plan', dst='local_plan'),
-            SetRemap(src='/trajectories', dst='trajectories'),
-            SetRemap(src='/local_costmap/published_footprint', dst='local_costmap/published_footprint'),
             SetRemap(src='/diagnostics', dst='diagnostics'),
 
             IncludeLaunchDescription(

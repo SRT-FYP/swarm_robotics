@@ -15,9 +15,6 @@ def generate_launch_description():
     )
 
     hardware_software_pkg = get_package_share_directory('hardware_software')
-    nav2_params= os.path.join(hardware_software_pkg, 'params', 'nav2_params.yaml')
-
-    min_frontier_size = 0.01
 
     slam_toolbox_pkg = get_package_share_directory('slam_toolbox')
     slam_params_file = os.path.join(hardware_software_pkg, 'params', 'slam.yaml')
@@ -35,7 +32,16 @@ def generate_launch_description():
 
     namespace = LaunchConfiguration("namespace")
     lidar_type = LaunchConfiguration("lidar_type")
-    
+
+    nav2_params= os.path.join(hardware_software_pkg, 'params', 'temp_nav2_params_namespaced.yaml')    
+
+    if(lidar_type == "rplidar"):
+        # For RPLIDAR, we set a smaller minimum frontier size, it has a smaller range
+        min_frontier_size = 0.01
+    else:
+        # For YDLIDAR, we set a larger minimum frontier size, it has a larger range
+        min_frontier_size = 0.1
+
     slam = GroupAction(
         [
             PushRosNamespace(namespace=namespace),
@@ -71,8 +77,6 @@ def generate_launch_description():
             SetRemap(src='/cmd_vel', dst='cmd_vel'),
             SetRemap(src='/global_plan', dst='global_plan'),
             SetRemap(src='/local_plan', dst='local_plan'),
-            SetRemap(src='/trajectories', dst='trajectories'),
-            SetRemap(src='/local_costmap/published_footprint', dst='local_costmap/published_footprint'),
             SetRemap(src='/diagnostics', dst='diagnostics'),
 
             IncludeLaunchDescription(
