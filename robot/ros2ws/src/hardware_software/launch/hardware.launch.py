@@ -1,12 +1,12 @@
 import os
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
-from launch_ros.actions import Node
 from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument
 from launch.substitutions import LaunchConfiguration, PythonExpression
 from launch.conditions import IfCondition
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.actions import GroupAction
+from launch_ros.actions import Node, SetRemap, PushRosNamespace
 
 
 def generate_launch_description():
@@ -45,9 +45,14 @@ def generate_launch_description():
         namespace=namespace,
         remappings=[('/tf', 'tf')]
     )
+
     ydlidar=IncludeLaunchDescription(
                 PythonLaunchDescriptionSource(os.path.join(yd_lidar_pkg, 'launch', 'ydlidar_launch.py')),
-                condition=IfCondition(PythonExpression(['"', lidar_type, '" == "ydlidar"']))
+                launch_arguments={
+                    'namespace': namespace,
+                    'use_sim_time': 'false',
+                }.items(),
+                condition=IfCondition(PythonExpression(['"', lidar_type, '" == "ydlidar"'])),
             )
 
     rplidar = GroupAction(

@@ -20,6 +20,8 @@ from launch_ros.actions import Node
 from launch.actions import DeclareLaunchArgument
 from launch.substitutions import LaunchConfiguration
 from launch.actions import LogInfo
+from launch_ros.descriptions import ParameterFile
+from nav2_common.launch import RewrittenYaml
 
 import lifecycle_msgs.msg
 import os
@@ -35,13 +37,21 @@ def generate_launch_description():
                                                share_dir, 'params', 'X4-Pro.yaml'),
                                            description='FPath to the ROS2 parameters file to use.')
 
+    declare_namespace_argument = DeclareLaunchArgument(
+        "namespace",
+        default_value="",
+        description="Namespace for robot",
+    )
+
+    namespace = LaunchConfiguration("namespace")
+
     driver_node = LifecycleNode(package='ydlidar_ros2_driver',
                                 executable='ydlidar_ros2_driver_node',
                                 name='ydlidar_ros2_driver_node',
                                 output='screen',
                                 emulate_tty=True,
+                                namespace=namespace,
                                 parameters=[parameter_file],
-                                namespace='/',
                                 )
     # tf2_node = Node(package='tf2_ros',
     #                 executable='static_transform_publisher',
@@ -51,6 +61,7 @@ def generate_launch_description():
 
     return LaunchDescription([
         params_declare,
+        declare_namespace_argument,
         driver_node,
         # tf2_node,
     ])
