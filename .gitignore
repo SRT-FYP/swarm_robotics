@@ -1,6 +1,7 @@
 # Ignore Python cache files
 *.pyc
 __pycache__/
+.vscode/
 
 # (Optional) Ignore ROS 2 build outputs
 build/

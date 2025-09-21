@@ -1,5 +1,0 @@
-  File "/home/fyp/Desktop/swarm_repo/robot/ros2ws/src/install/hardware_software/lib/python3.12/site-packages/hardware_software/mqtt_encoder.py", line 6
-    import nav_msgs.msg import OccupancyGrid
-                        ^^^^^^
-SyntaxError: invalid syntax
-

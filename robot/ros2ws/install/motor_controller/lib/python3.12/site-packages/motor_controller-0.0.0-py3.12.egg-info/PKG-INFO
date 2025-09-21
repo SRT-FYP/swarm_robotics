@@ -1,7 +1,0 @@
-Metadata-Version: 2.1
-Name: motor-controller
-Version: 0.0.0
-Summary: ROS2 package for motor control using GPIOZero
-Maintainer: fyp
-Maintainer-email: fyp@todo.todo
-License: TODO: License declaration

@@ -1,4 +1,0 @@
-[console_scripts]
-map_to_json = hardware_software.map_to_json:main
-ros2_mqtt_encoder = hardware_software.mqtt_encoder:main
-ros2_mqtt_subscriber = hardware_software.mqtt_subscriber:main

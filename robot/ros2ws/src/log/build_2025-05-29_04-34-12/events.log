@@ -1,7 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000487] (-) JobUnselected: {'identifier': 'explore_lite'}
-[0.000567] (-) JobUnselected: {'identifier': 'hardware_software'}
-[0.000609] (-) JobUnselected: {'identifier': 'imu_reader'}
-[0.000630] (-) JobUnselected: {'identifier': 'motor_controller'}
-[0.000660] (-) JobUnselected: {'identifier': 'my_robot_control'}
-[0.000853] (-) EventReactorShutdown: {}

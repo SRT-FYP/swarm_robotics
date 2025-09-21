@@ -1,2 +1,0 @@
-[console_scripts]
-imu_reader_node = imu_reader.imu_reader_node:main
