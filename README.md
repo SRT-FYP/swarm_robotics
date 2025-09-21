@@ -25,7 +25,7 @@ The way this repo is structured, we have a folder containing all code related to
 #### simulation_robots:  
 This folder contains a multi-robot mapping simulation program using the turtlebot3 package and Gazebo sim simulation software.  
 
-to run the complete program, launch multi_slam_nav.launch.py file 
+to run the complete program, launch multi_slam_nav.launch.py file in leader_follower package
 
 this will open an rviz window to display the maps that are being built by each robot individually, and a window to display the merged map of all the individual ones in real time. No user input is needed while program is running, the robots will be autonomously exploring the environment.  
 other launch files are included as well, these implement different parts of the functionality of the complete program (e.g  single robot exploration, multi robot mapping but user must move the robots with teleop commands, multi robot mapping but user must move the robots by calling the Nav2 navigateToPose action server, also some modification in the tf frames of each robot relative to eachother, etc...)
