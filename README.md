@@ -2,9 +2,17 @@
 This repository contains the technical work related to the Final Year Project of our Mechatronics BTech program at the University of Balamand
 
 ### Team Members:
-  - Jad Katerji
-  - Lawrence Abou Karroum
-  - Ghina Debian
+  - Jad Katerji  
+    https://github.com/jad-katerji  
+    jadkaterjio@gmail.com
+    
+  - Lawrence Abou Karroum  
+    https://github.com/Lawrenceak  
+    lawrenceaboukarroum1@gmail.com
+    
+  - Ghina Debian  
+    https://github.com/GhinaDebian  
+    ghinadebian@gmail.com  
 
 ### Technologies used: 
   - ROS2 Jazzy
