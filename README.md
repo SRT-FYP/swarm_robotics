@@ -43,7 +43,7 @@ other launch files are included as well, these implement different parts of the 
     
 #### hardware_robots:  
 This folder contains the ROS2 program that is implemented on the physical mobile robots. This package is intended to be running on the rasbperry pi 5 of each robot.  
-Structur:  
+Structure:  
 The main package to be used is the hardware_software package. All other packages are controlling a specific feature either an algorithm (taken as an already existing package from the internet not our work, these are the same used for the simulations) or a hardware component.
 
 ***Note 1***: the ydlidar_ros2_driver package is a cpp package and not a ROS2 package, it requires different commands to build, so be careful when building it so that it can be properly used within the hardware_software package.
