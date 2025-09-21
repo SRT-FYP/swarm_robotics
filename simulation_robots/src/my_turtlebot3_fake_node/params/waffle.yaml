@@ -1,0 +1,13 @@
+/**/turtlebot3_fake_node:
+  ros__parameters:
+    use_sim_time: true
+    wheels:
+      separation: 0.287
+      radius: 0.033
+
+    joint_states_frame: "base_footprint"
+    odom_frame: "odom"
+    base_frame: "base_footprint"
+    robot_odom_pose: [0.0,0.0,0.0]
+    frame_prefix: "l_"
+    odom_frame_prefix: "l_"
