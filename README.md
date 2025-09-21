@@ -1,5 +1,5 @@
 # Swarm Robotics for Exploration and Mapping
-This repository contains the technical work related to the Final Year Project of our Mechatronics BTech program
+This repository contains the technical work related to the Final Year Project of our Mechatronics BTech program at the University of Balamand
 
 ### Team Members:
   - Jad Katerji
@@ -13,6 +13,22 @@ This repository contains the technical work related to the Final Year Project of
 
 ### Repo Content:
 The way this repo is structured, we have a folder containing all code related to the simulation of our robot system, and a folder with all code related to the hardware implementation of our program.  
+
+#### simulation_robots:  
+This folder contains a multi-robot mapping simulation program using the turtlebot3 package and Gazebo sim simulation software.  
+
+to run the complete program, launch multi_slam_nav.launch.py file 
+
+this will open an rviz window to display the maps that are being built by each robot individually, and a window to display the merged map of all the individual ones in real time. No user input is needed while program is running, the robots will be autonomously exploring the environment.  
+other launch files are included as well, these implement different parts of the functionality of the complete program (e.g  single robot exploration, multi robot mapping but user must move the robots with teleop commands, multi robot mapping but user must move the robots by calling the Nav2 navigateToPose action server, also some modification in the tf frames of each robot relative to eachother, etc...)
+
+<img width="2748" height="1736" alt="2 turtlebot3 robots in turtlebot3 house" src="https://github.com/user-attachments/assets/17915367-9329-4bc6-984d-37cda618eac4" />
+<img width="2748" height="1736" alt="2 turtlebot3 robots in turtlebot3 house with lidar scan on" src="https://github.com/user-attachments/assets/e929ab0d-a3f7-4bf2-993b-348f418e1aad" />
+<img width="2748" height="1736" alt="merged map" src="https://github.com/user-attachments/assets/72538e9a-b809-47f6-8cbf-77f6b23571b3" />
+
+
+## TODO:
+- Make program modular. I.e. we should be able to input the number robots we want, with their names and poses, and the code would take care of launching the required nodes for each. 
 
 #### Trials_Code:  
   This folder contains many unrelated files each with code to control/process a specific hardware component that is included in our mobile robots (e.g. wheel encoder, wheel motors, lidar sensor, etc...). This is only used for testing purposes and is not included in the final program.
@@ -40,8 +56,27 @@ note this is to be done on each robot individually
     - **namespace** (default: empty string) namespace to uniquely identify the topics and nodes of each robot
     - **map_merger_robot** (true or false. default: false) to specify if the robot will take the role of merging all the partial maps created by all the robots
     - **lidar_type** (ydlidar or rplidar. default: rplidar) if the robots has a rplidar or ydlidar
+  <br>
+  
+  ![mobile_robots](https://github.com/user-attachments/assets/588d4bf9-e045-4115-bc5f-63c4d4a749ce)
+
+
+<br>
+
+## TODO:
+- Implement a multi-robot exploration algorithm.  <br>
+<br>
+  The program we have right now runs a single-robot exploration algorithm for each robot, this means the robots' decisions for where to move is completely independant of the positions of the other robots. In other words the robots are not aware of eachother in their envornment. This is obviously not in alignment with the concept of swarm robotics as the exploration algorithm does not create a swarm intelligence. Our work can be considered a foundation, a stepping stone, to further implement swarm algorithms to the project.
+  
+<br>
 
 ### Third-Party Packages
 #### exploration and map merging alogorithms:
 https://github.com/robo-friends/m-explore-ros2.git  
 https://github.com/gingineer95/Multi-Robot-Exploration-and-Map-Merging/tree/main 
+
+#### turtlebot3 robot simulation:  
+https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+
+#### navigation:  
+https://github.com/ros-navigation/navigation2.git
