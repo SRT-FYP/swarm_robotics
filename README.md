@@ -46,11 +46,9 @@ This folder contains the ROS2 program that is implemented on the physical mobile
 Structure:  
 The main package to be used is the hardware_software package. All other packages are controlling a specific feature either an algorithm (taken as an already existing package from the internet not our work, these are the same used for the simulations) or a hardware component.
 
-***Note 1***: the ydlidar_ros2_driver package is a cpp package and not a ROS2 package, it requires different commands to build, so be careful when building it so that it can be properly used within the hardware_software package.
+ ***Note 1***: we created python nodes to control/process hardware data from the rabperry pi directly. This is not the standard practice in ROS2 harwdare projects. The conventional way of going about it is adding an arduino and connecting it to the raspberry pi such that the arduino accesses the Rpi IOs, and cpp nodes are created to only interact with the arduino. the popular ros2_control package is used with this setup.
 
- ***Note 2***: we created python nodes to control/process hardware data from the rabperry pi directly. This is not the standard practice in ROS2 harwdare projects. The conventional way of going about it is adding an arduino and connecting it to the raspberry pi such that the arduino accesses the Rpi IOs, and cpp nodes are created to only interact with the arduino. the popular ros2_control package is used with this setup.
-
- ***Note 3***: in the source code files of hardware_software packages, there are some python files related to enabling mqtt communication between the robots for the purpose of sending their seperate map data to a device (whether it be a robot within the group or a web app) to be merged into one whole map. However, this functionality was not implemented in the final program and could be explored in future works. further investigation must be done to determine whether mqtt is the preferable method of communication over for example ros domains.
+ ***Note 2***: in the source code files of hardware_software packages, there are some python files related to enabling mqtt communication between the robots for the purpose of sending their seperate map data to a device (whether it be a robot within the group or a web app) to be merged into one whole map. However, this functionality was not implemented in the final program and could be explored in future works. further investigation must be done to determine whether mqtt is the preferable method of communication over for example ros domains.
 
 Launching complete robot program on mobile robots:  
 note this is to be done on each robot individually
@@ -88,3 +86,7 @@ https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
 
 #### navigation:  
 https://github.com/ros-navigation/navigation2.git
+
+#### Lidar sensors integration
+https://github.com/YDLIDAR/ydlidar_ros2_driver.git
+https://github.com/Slamtec/rplidar_ros.git
