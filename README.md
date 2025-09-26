@@ -88,5 +88,5 @@ https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
 https://github.com/ros-navigation/navigation2.git
 
 #### Lidar sensors integration
-https://github.com/YDLIDAR/ydlidar_ros2_driver.git
+https://github.com/YDLIDAR/ydlidar_ros2_driver.git  
 https://github.com/Slamtec/rplidar_ros.git
